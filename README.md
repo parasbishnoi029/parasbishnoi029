@@ -19,6 +19,6 @@
 ![](https://github-contributor-stats.vercel.app/api?username=parasbishnoi029&limit=5&theme=shadow_red&combine_all_yearly_contributions=true)
 
 ---
-[![](https://komarev.com/ghpvc/?username=parasbishnoi029&icon=10&color=4)](https://visitcount.itsvg.in)
+[![]((https://parasfolio.qd.je/))](https://parasfolio.qd.je/)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
