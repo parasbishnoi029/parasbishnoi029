@@ -26,6 +26,7 @@ Go to the repository’s **Actions** tab and enable workflows if GitHub asks. Ru
 | `snake.yml` | Animated contribution snake on the `output` branch | First run creates the branch used by the image URL. Then uncomment its block in `README.md`. |
 | `summary.yml` | Summary-card files in `profile-summary-card-output` | Kept available as an optional generated asset; the visible README deliberately does not depend on it. |
 | `metrics.yml` | WakaTime content inside the marked README section | Requires the secret below. |
+| `contributions-3d.yml` | A real generated 3D contribution SVG in `profile-3d-contrib/` | Run once, then uncomment its image block in `README.md`. |
 
 ## 4. Add the WakaTime secret (optional)
 
@@ -40,7 +41,7 @@ Without this secret, disable `metrics.yml`; otherwise its scheduled runs will fa
 
 GitHub READMEs are static Markdown/HTML. They cannot host safe interactive JavaScript, WebGL, or a truly interactive 3D graph. The honest alternatives are:
 
-- Use the included activity graph and animated snake for a GitHub-native profile.
+- Use the included activity graph and the generated `profile-3d-contrib` SVG for a GitHub-native profile.
 - Publish a real 3D visualization on Parasfolio, then link to it from the README.
 - Embed a rendered GIF or SVG preview that links to the live visualization.
 
