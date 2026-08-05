@@ -1,117 +1,116 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Paras Bishnoi — Building intelligent software" width="100%" />
-
-  <br />
-  <a href="https://github.com/parasbishnoi029?tab=followers"><img src="https://img.shields.io/github/followers/parasbishnoi029?label=Followers&style=for-the-badge&color=7aa2f7&labelColor=1a1b26" alt="Followers" /></a>
-  <a href="https://github.com/parasbishnoi029"><img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=for-the-badge&color=bb9af7&label=PROFILE+VIEWS" alt="Profile views" /></a>
+  <img src="./assets/banner.svg" alt="Paras Bishnoi — AI developer" width="100%" />
+  <br/><br/>
+  <a href="https://github.com/parasbishnoi029?tab=followers"><img src="https://img.shields.io/github/followers/parasbishnoi029?style=flat-square&label=FOLLOWERS&labelColor=0d1117&color=7aa2f7" alt="GitHub followers" /></a>
+  <img src="https://img.shields.io/badge/STATUS-BUILDING%20IN%20PUBLIC-bb9af7?style=flat-square&labelColor=0d1117" alt="Status: Building in public" />
+  <img src="https://img.shields.io/badge/FOCUS-AI%20%2B%20PRODUCTS-7dcfff?style=flat-square&labelColor=0d1117" alt="Focus: AI and products" />
 </div>
 
-<br />
+<br/>
 
 ```text
-> booting /parasbishnoi029 ...
-  role       Full-stack & AI developer
-  mission    Turn difficult problems into useful products.
-  now        Building, learning, shipping.
+┌─[ paras@github ]───────────────────────────────────────────┐
+│  I build AI-powered products that people can actually use. │
+│  Less demo theatre. More useful software.                  │
+└────────────────────────────────────────────────────────────┘
 ```
 
-## ◈ Command Center
+<div align="center">
+  <a href="#-selected-work">WORK</a>&nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#-the-lab">STACK</a>&nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#-connect">CONNECT</a>
+</div>
 
-| Signal | Current status |
-| :-- | :-- |
-| Focus | Applied AI, developer tools, and full-stack products |
-| Building | Reliable software with useful, human-first interfaces |
-| Learning | LLM engineering, MLOps, and scalable systems |
-| Open to | Collaboration, meaningful open source, and interesting problems |
+## ◉ Selected Work
 
-## ◈ Featured Projects
+<img src="./assets/project-grid.svg" alt="Featured projects: AI Reviewer, Aegis AI, AI Resume Analyzer, and Parasfolio" width="100%" />
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🤖 AI Reviewer</h3>
-      <p>AI-assisted code review built to surface issues and improve developer feedback loops.</p>
-      <p><a href="https://github.com/parasbishnoi029/AI-Reviewer">Repository →</a></p>
+      <h3>01 — AI Reviewer</h3>
+      <p>AI-assisted code review that helps developers find issues earlier and receive clearer feedback.</p>
+      <a href="https://github.com/parasbishnoi029/AI-Reviewer">VIEW REPOSITORY ↗</a>
     </td>
     <td width="50%" valign="top">
-      <h3>🛡️ Aegis AI</h3>
-      <p>An AI product focused on practical intelligence, automation, and a cleaner user experience.</p>
-      <p><a href="https://github.com/parasbishnoi029/Aegis-AI">Repository →</a></p>
+      <h3>02 — Aegis AI</h3>
+      <p>An AI product exploring automation, intelligent workflows, and sharp user experience.</p>
+      <a href="https://github.com/parasbishnoi029/Aegis-AI">VIEW REPOSITORY ↗</a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>📄 AI Resume Analyzer</h3>
-      <p>Resume analysis tooling that turns static documents into actionable feedback.</p>
-      <p><a href="https://github.com/parasbishnoi029/AI-Resume-Analyzer">Repository →</a></p>
+      <h3>03 — AI Resume Analyzer</h3>
+      <p>A resume analysis tool that turns a static document into direct, actionable feedback.</p>
+      <a href="https://github.com/parasbishnoi029/AI-Resume-Analyzer">VIEW REPOSITORY ↗</a>
     </td>
     <td width="50%" valign="top">
-      <h3>🌐 Parasfolio</h3>
-      <p>A portfolio built to present projects, skills, and work without the usual clutter.</p>
-      <p><a href="https://github.com/parasbishnoi029/Parasfolio">Repository →</a></p>
+      <h3>04 — Parasfolio</h3>
+      <p>A personal portfolio with one job: show the work clearly, without decoration getting in the way.</p>
+      <a href="https://github.com/parasbishnoi029/Parasfolio">VIEW REPOSITORY ↗</a>
     </td>
   </tr>
 </table>
 
-> **Reality check:** confirm the four repository slugs above before pushing. GitHub profile READMEs cannot reliably fetch arbitrary repository metadata by themselves; the links are intentionally simple and durable.
+> Verify the repository URLs before you publish. A beautiful README with dead project links is still broken.
 
-## ◈ GitHub Telemetry
-
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=parasbishnoi029&show_icons=true&hide_border=true&count_private=true&bg_color=1a1b26&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&ring_color=7dcfff" alt="GitHub statistics" />
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=parasbishnoi029&hide_border=true&background=1A1B26&ring=7AA2F7&fire=FF9E64&currStreakLabel=C0CAF5&sideLabels=BB9AF7&dates=565F89&currStreakNum=C0CAF5&sideNums=C0CAF5" alt="GitHub streak" />
-  <br />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parasbishnoi029&layout=compact&hide_border=true&bg_color=1a1b26&title_color=7aa2f7&text_color=c0caf5" alt="Top languages" />
-</div>
+## ◉ Signal, Not Noise
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parasbishnoi029&theme=tokyonight" alt="Profile activity summary" width="100%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parasbishnoi029&theme=tokyonight" alt="Repositories per language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parasbishnoi029&theme=tokyonight" alt="Most committed languages" />
+  <a href="https://github.com/parasbishnoi029?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-ALL%20REPOSITORIES-7aa2f7?style=for-the-badge&labelColor=16161e" alt="Explore repositories" /></a>
+  <a href="https://github.com/parasbishnoi029?tab=stars"><img src="https://img.shields.io/badge/VIEW-STARRED%20WORK-bb9af7?style=for-the-badge&labelColor=16161e" alt="View starred work" /></a>
 </div>
+
+<br/>
+
+<details>
+<summary><b>Why no giant broken stats wall?</b></summary>
+<br/>
+Most profile-stat services are third-party deployments. They rate-limit, fail, or disappear; that is exactly what makes a profile look unfinished. The reliable source of truth is GitHub itself: repositories, pinned work, contribution history, and commits. The optional workflows in this repository add generated visuals only after you enable them successfully.
+</details>
+
+<!--
+  Optional: after snake.yml succeeds once, uncomment this block.
+  Keeping it hidden until then avoids a broken image on a new profile.
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=parasbishnoi029&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" alt="GitHub trophies" width="100%" />
+  <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake-dark.svg" alt="Animated contribution snake" width="100%" />
 </div>
+-->
 
-### Contribution flow
+## ◉ The Lab
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&bg_color=1a1b26&color=c0caf5&line=7aa2f7&point=bb9af7&area=true&hide_border=true" alt="Contribution graph" width="100%" />
-
-<!-- Snake output is generated by .github/workflows/snake.yml after the first successful run. -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake animation" width="100%" />
+
+`AI / ML`&nbsp; Python · LLM APIs · prompt engineering · data analysis
+
+`FRONTEND`&nbsp; React · Next.js · TypeScript · JavaScript
+
+`BACKEND`&nbsp; Node.js · Express · REST APIs · Python
+
+`DATA`&nbsp; MongoDB · PostgreSQL · MySQL · Firebase
+
+`SYSTEMS`&nbsp; Git · GitHub Actions · Docker · Vercel · Linux
+
 </div>
 
-## ◈ Stack, without badge landfill
+## ◉ Current Direction
 
-| Domain | Tools I use or am actively deepening |
-| :-- | :-- |
-| **AI / ML** | Python, LLM APIs, prompt engineering, data analysis |
-| **Frontend** | React, Next.js, JavaScript, TypeScript, HTML, CSS |
-| **Backend** | Node.js, Express, REST APIs, Python |
-| **Data** | MongoDB, PostgreSQL, MySQL, Firebase |
-| **Cloud / DevOps** | Git, GitHub Actions, Docker, Vercel, Linux |
-| **Design / workflow** | Figma, Postman, VS Code |
-
-## ◈ Coding Metrics
-
-<!--START_SECTION:waka-->
-```text
-WakaTime is not connected yet.
-Follow SETUP.md to enable automatic weekly coding metrics.
+```diff
++ Building  → AI tools with real product value
++ Learning  → LLM engineering, MLOps, scalable systems
+! Principle → Make it simple, make it useful, then make it fast
 ```
-<!--END_SECTION:waka-->
 
-## ◈ Connect
+## ◉ Connect
 
 <div align="center">
-  <a href="https://github.com/parasbishnoi029"><img src="https://img.shields.io/badge/GitHub-1a1b26?style=for-the-badge&logo=github&logoColor=c0caf5" alt="GitHub" /></a>
-  <!-- Replace the placeholders below with real links before publishing. -->
-  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-1a1b26?style=for-the-badge&logo=gmail&logoColor=ff9e64" alt="Email" /></a>
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-1a1b26?style=for-the-badge&logo=linkedin&logoColor=7aa2f7" alt="LinkedIn" /></a>
+  <a href="https://github.com/parasbishnoi029"><img src="https://img.shields.io/badge/GITHUB-0d1117?style=for-the-badge&logo=github&logoColor=c0caf5" alt="GitHub" /></a>
+  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/EMAIL-0d1117?style=for-the-badge&logo=gmail&logoColor=ff9e64" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LINKEDIN-0d1117?style=for-the-badge&logo=linkedin&logoColor=7aa2f7" alt="LinkedIn" /></a>
 </div>
 
+<br/>
 <div align="center">
-  <sub>Built with intent. Maintained with curiosity. No empty hype.</sub>
+  <sub>© 2026 PARAS BISHNOI · BUILT WITH CURIOSITY, NOT COPY-PASTE HYPE</sub>
 </div>
