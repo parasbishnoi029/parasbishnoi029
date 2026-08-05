@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Paras%20Bishnoi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Software%20Developer%20%7C%20ML%20%26%20Data%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=800&color=6C63FF&center=true&vCenter=true&width=550&lines=Python+%7C+Kotlin+%7C+Machine+Learning;Building+things+that+run+on+coffee+%E2%98%95;Always+learning%2C+always+shipping" alt="typing" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=3000&pause=800&color=6C63FF&center=true&vCenter=true&width=550&lines=Python+%7C+Kotlin+%7C+Machine+Learning;Building+things+that+run+on+coffee+%E2%98%95;Always+learning%2C+always+shipping" alt="typing" />
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-parasfolio.qd.je-6C63FF?style=for-the-badge)](https://parasfolio.qd.je/)
 [![Views](https://komarev.com/ghpvc/?username=parasbishnoi029&icon=10&color=6C63FF&style=for-the-badge&label=PROFILE+VIEWS)](https://parasfolio.qd.je/)
@@ -84,10 +84,10 @@ fun_fact: "turns coffee into code (and occasionally bugs)"
 
 <div align="center">
 
-<img src="https://github-readme-stats.shion.dev/api?username=parasbishnoi029&theme=shadow_red&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" width="49%"/>
-<img src="https://github-readme-stats.shion.dev/api/top-langs/?username=parasbishnoi029&theme=shadow_red&hide_border=true&include_all_commits=true&count_private=true&layout=compact" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=parasbishnoi029&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parasbishnoi029&layout=compact&theme=radical&hide_border=true" width="49%"/>
 
-<img src="https://streak-stats.demolab.com/?user=parasbishnoi029&theme=shadow_red&hide_border=true" width="70%"/>
+<img src="https://streak-stats.demolab.com/?user=parasbishnoi029&theme=radical&hide_border=true" width="70%"/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&theme=redical&hide_border=true" width="100%"/>
 
@@ -98,33 +98,7 @@ fun_fact: "turns coffee into code (and occasionally bugs)"
 ## 🏆 Trophies
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=parasbishnoi029&theme=shadow_red&no-frame=true&no-bg=false&margin-w=4&row=1"/>
-</div>
-
----
-
-## 🔝 Top Contributed Repo
-
-<div align="center">
-<img src="https://github-contributor-stats.vercel.app/api?username=parasbishnoi029&limit=5&theme=shadow_red&combine_all_yearly_contributions=true"/>
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake.svg" width="100%"/>
-</div>
-
-> The snake graph needs a one-time GitHub Actions workflow running in your `parasbishnoi029/parasbishnoi029` repo to generate that SVG — I can write that workflow file for you if you want it live.
-
----
-
-### ✍️ Random Dev Quote
-
-<div align="center">
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/>
+<img src="https://github-profile-trophy.vercel.app/?username=parasbishnoi029&theme=radical&no-frame=true&margin-w=4&row=1"/>
 </div>
 
 ---
@@ -146,7 +120,5 @@ fun_fact: "turns coffee into code (and occasionally bugs)"
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
-
-<sub>Proudly built with <a href="https://gprm.itsvg.in">GPRM</a></sub>
 
 </div>
