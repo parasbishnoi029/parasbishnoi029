@@ -1,98 +1,91 @@
 <div align="center">
-  <img src="./assets/quantum-core.svg" alt="Animated 3D data core — Paras Bishnoi" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=130&color=0:070A13,45:21144C,100:070A13&text=Paras%20Bishnoi&fontColor=F8FAFC&fontSize=52&fontAlignY=43&desc=Machine%20Learning%20%C2%B7%20Data%20%C2%B7%20Software&descAlignY=69&descSize=17&animation=fadeIn" width="100%" alt="Paras Bishnoi — Machine Learning, Data, Software" />
 </div>
 
 <br/>
 
-<div align="center">
+> I build software where data has to become useful — not just look clever in a demo.
 
-<a href="https://parasfolio.qd.je/"><img src="https://img.shields.io/badge/ENTER_PARASFOLIO-7C3AED?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0B1020" alt="Visit Parasfolio" /></a>
-<a href="mailto:parasbishnoi012@gmail.com"><img src="https://img.shields.io/badge/CONTACT_ME-00B8D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B1020" alt="Email Paras" /></a>
+I am a developer focused on **machine learning, data science, and application development**. Right now, I am improving my Python, Kotlin, and cloud skills by building projects that have a clear purpose.
 
-</div>
+<p align="left">
+  <a href="https://parasfolio.qd.je/"><b>Portfolio</b></a>
+  · <a href="mailto:parasbishnoi012@gmail.com"><b>Email</b></a>
+  · <a href="https://www.linkedin.com/in/paras029"><b>LinkedIn</b></a>
+  · <a href="https://x.com/parasbishnoi03"><b>X</b></a>
+</p>
 
-<br/>
+---
+
+## Now
 
 ```text
-╭──────────────────  SYSTEM STATUS  ──────────────────╮
-│  FOCUS       Machine Learning · Data Science · Apps   │
-│  BUILDING    Projects that solve real problems        │
-│  LEARNING    Python · Kotlin · Cloud tooling          │
-│  OPERATING   Coffee → Code → Iterate                  │
-╰─────────────────────────────────────────────────────╯
+Building     → AI tools and data-driven applications
+Learning     → Python · Kotlin · Cloud tooling
+Interested in → ML pipelines · data visualisation · useful automation
+Principle    → Clear problem first. Clean solution second. Hype last.
 ```
 
-## / MANIFESTO
+## Selected work
 
-I am a software developer interested in the useful edge of machine learning: data pipelines, visualisation, and applications that people can actually work with. I care about getting the fundamentals right before adding noise.
+| Project | What it does | Status |
+| :-- | :-- | :-- |
+| [AI Reviewer](https://github.com/parasbishnoi029/AI-Reviewer) | AI-assisted code review and developer feedback. | `BUILDING` |
+| [Aegis AI](https://github.com/parasbishnoi029/Aegis-AI) | Intelligent workflows and practical automation. | `BUILDING` |
+| [AI Resume Analyzer](https://github.com/parasbishnoi029/AI-Resume-Analyzer) | Turns resumes into useful, direct feedback. | `SHIPPED` |
+| [Parasfolio](https://parasfolio.qd.je/) | My work, experiments, and the things I am learning. | `LIVE` |
 
-> **Current question:** How do you turn data into something people can understand and act on?
+<sub>These links must match your real repositories. Change any incorrect slug before pushing; presenting work honestly matters more than decoration.</sub>
 
-<br/>
-
-## / PROJECT ARCHIVE
-
-<img src="./assets/project-grid.svg" alt="Featured projects: AI Reviewer, Aegis AI, AI Resume Analyzer, and Parasfolio" width="100%" />
-
-<table>
-  <tr>
-    <td width="50%"><h3>01 — AI Reviewer</h3><p>AI-assisted code review for clearer feedback and faster fixes.</p><a href="https://github.com/parasbishnoi029/AI-Reviewer">OPEN PROJECT ↗</a></td>
-    <td width="50%"><h3>02 — Aegis AI</h3><p>An exploration of intelligent automation and practical workflows.</p><a href="https://github.com/parasbishnoi029/Aegis-AI">OPEN PROJECT ↗</a></td>
-  </tr>
-  <tr>
-    <td width="50%"><h3>03 — AI Resume Analyzer</h3><p>Turns resumes into clear, actionable feedback.</p><a href="https://github.com/parasbishnoi029/AI-Resume-Analyzer">OPEN PROJECT ↗</a></td>
-    <td width="50%"><h3>04 — Parasfolio</h3><p>My portfolio: work, experiments, and the things I am building.</p><a href="https://parasfolio.qd.je/">VISIT SITE ↗</a></td>
-  </tr>
-</table>
-
-<sub>Check the repository URLs before publishing. A profile that points to missing work is not premium; it is unfinished.</sub>
-
-<br/><br/>
-
-## / TOOLCHAIN
+## Toolkit
 
 <div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,kotlin,mysql,fastapi,firebase,supabase,gcp,cloudflare,vercel,netlify,anaconda&theme=dark&perline=11" alt="Python, Kotlin, MySQL, FastAPI, Firebase, Supabase, Google Cloud, Cloudflare, Vercel, Netlify, Anaconda" />
-
-<br/><br/>
-
-`NumPy` · `Pandas` · `Matplotlib` · `Plotly` · `PyTorch` · `TensorFlow` · `OpenCV` · `Machine Learning` · `Data Visualisation`
-
-</div>
-
-<br/>
-
-## / LIVE SIGNAL
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=parasbishnoi029&hide_border=true&background=0B1020&ring=8B5CF6&fire=F472B6&currStreakLabel=22D3EE&sideLabels=C4B5FD&dates=64748B&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="GitHub contribution streak" />
-</div>
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&bg_color=0B1020&color=C4B5FD&line=8B5CF6&point=F472B6&area=true&area_color=312E81&hide_border=true" alt="GitHub contribution activity" width="100%" />
-
-<!--
-  After .github/workflows/contributions-3d.yml finishes once, uncomment this:
-  <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D GitHub contribution graph" />
--->
-
-<br/>
-
-## / TRANSMISSIONS
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/paras029"><img src="https://img.shields.io/badge/LINKEDIN-0B1020?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn" /></a>
-  <a href="https://x.com/parasbishnoi03"><img src="https://img.shields.io/badge/X-0B1020?style=for-the-badge&logo=x&logoColor=F8FAFC" alt="X" /></a>
-  <a href="https://www.instagram.com/parasbishnoi.03/"><img src="https://img.shields.io/badge/INSTAGRAM-0B1020?style=for-the-badge&logo=instagram&logoColor=F472B6" alt="Instagram" /></a>
-  <a href="https://www.facebook.com/paras.bishnoi.29"><img src="https://img.shields.io/badge/FACEBOOK-0B1020?style=for-the-badge&logo=facebook&logoColor=60A5FA" alt="Facebook" /></a>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=flat-square&color=7C3AED&label=PROFILE+VIEWS" alt="Profile views" />
+  <img src="https://skillicons.dev/icons?i=python,kotlin,mysql,fastapi,firebase,supabase,gcp,cloudflare,vercel,netlify&theme=dark&perline=10" alt="Python, Kotlin, MySQL, FastAPI, Firebase, Supabase, Google Cloud, Cloudflare, Vercel, Netlify" />
   <br/><br/>
-  <sub>Made in India · Building in public · One useful system at a time</sub>
+  <code>NumPy</code> · <code>Pandas</code> · <code>Matplotlib</code> · <code>Plotly</code> · <code>PyTorch</code> · <code>TensorFlow</code> · <code>OpenCV</code>
+</div>
+
+## The lab
+
+<details>
+<summary><b>What I am exploring</b></summary>
+<br/>
+
+- Reliable ML pipelines and practical model integration.
+- Data visualisation that helps people make decisions.
+- Mobile and web applications with a real user problem behind them.
+</details>
+
+<details>
+<summary><b>GitHub activity</b></summary>
+<br/>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=parasbishnoi029&hide_border=true&background=0D1117&ring=8B5CF6&fire=F472B6&currStreakLabel=8B5CF6&sideLabels=C4B5FD&dates=64748B&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="GitHub contribution streak" />
+</div>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&bg_color=0D1117&color=C4B5FD&line=8B5CF6&point=F472B6&area=true&area_color=312E81&hide_border=true" alt="Contribution activity graph" width="100%" />
+
+</details>
+
+<details>
+<summary><b>3D contribution model</b></summary>
+<br/>
+
+The repository includes a workflow that generates a real 3D contribution SVG. Run <code>Generate 3D contribution graph</code> once in the Actions tab, then uncomment this line:
+
+```html
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D GitHub contribution graph" />
+```
+
+</details>
+
+<br/>
+
+<div align="center">
+  <a href="https://www.instagram.com/parasbishnoi.03/"><img src="https://img.shields.io/badge/Instagram-111827?style=flat-square&logo=instagram&logoColor=F472B6" alt="Instagram" /></a>
+  <a href="https://www.facebook.com/paras.bishnoi.29"><img src="https://img.shields.io/badge/Facebook-111827?style=flat-square&logo=facebook&logoColor=60A5FA" alt="Facebook" /></a>
+  <img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=flat-square&color=8B5CF6&label=views" alt="Profile views" />
 </div>
