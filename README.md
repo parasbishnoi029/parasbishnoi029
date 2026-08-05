@@ -1,91 +1,92 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=130&color=0:070A13,45:21144C,100:070A13&text=Paras%20Bishnoi&fontColor=F8FAFC&fontSize=52&fontAlignY=43&desc=Machine%20Learning%20%C2%B7%20Data%20%C2%B7%20Software&descAlignY=69&descSize=17&animation=fadeIn" width="100%" alt="Paras Bishnoi — Machine Learning, Data, Software" />
+  <img src="./assets/ultimate-hero.svg" width="100%" alt="Paras Bishnoi — software developer, machine learning and data" />
 </div>
 
 <br/>
 
-> I build software where data has to become useful — not just look clever in a demo.
+<div align="center">
 
-I am a developer focused on **machine learning, data science, and application development**. Right now, I am improving my Python, Kotlin, and cloud skills by building projects that have a clear purpose.
+**I turn raw data and rough ideas into software people can use.**
 
-<p align="left">
-  <a href="https://parasfolio.qd.je/"><b>Portfolio</b></a>
-  · <a href="mailto:parasbishnoi012@gmail.com"><b>Email</b></a>
-  · <a href="https://www.linkedin.com/in/paras029"><b>LinkedIn</b></a>
-  · <a href="https://x.com/parasbishnoi03"><b>X</b></a>
-</p>
+<sub>Machine Learning · Data Science · Application Development</sub>
 
----
+<br/><br/>
 
-## Now
+<a href="https://parasfolio.qd.je/"><b>↗ Portfolio</b></a>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+<a href="mailto:parasbishnoi012@gmail.com"><b>✉ Email</b></a>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/paras029"><b>in LinkedIn</b></a>&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;
+<a href="https://x.com/parasbishnoi03"><b>𝕏 X</b></a>
+
+</div>
+
+<br/>
 
 ```text
-Building     → AI tools and data-driven applications
-Learning     → Python · Kotlin · Cloud tooling
-Interested in → ML pipelines · data visualisation · useful automation
-Principle    → Clear problem first. Clean solution second. Hype last.
+╭──────────────────────────────────────────────────────────────────────╮
+│  NOW                                                                  │
+│  Building  →  useful AI tools and data-driven applications            │
+│  Learning  →  Python · Kotlin · cloud engineering                     │
+│  Exploring →  ML pipelines · visualisation · practical automation     │
+╰──────────────────────────────────────────────────────────────────────╯
 ```
 
-## Selected work
+## Selected systems
 
-| Project | What it does | Status |
-| :-- | :-- | :-- |
-| [AI Reviewer](https://github.com/parasbishnoi029/AI-Reviewer) | AI-assisted code review and developer feedback. | `BUILDING` |
-| [Aegis AI](https://github.com/parasbishnoi029/Aegis-AI) | Intelligent workflows and practical automation. | `BUILDING` |
-| [AI Resume Analyzer](https://github.com/parasbishnoi029/AI-Resume-Analyzer) | Turns resumes into useful, direct feedback. | `SHIPPED` |
-| [Parasfolio](https://parasfolio.qd.je/) | My work, experiments, and the things I am learning. | `LIVE` |
+<img src="./assets/project-atlas.svg" width="100%" alt="Featured projects: AI Reviewer, Aegis AI, AI Resume Analyzer and Parasfolio" />
 
-<sub>These links must match your real repositories. Change any incorrect slug before pushing; presenting work honestly matters more than decoration.</sub>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>01 / AI Reviewer</h3>
+      <p>AI-assisted code review built to make developer feedback more useful.</p>
+      <a href="https://github.com/parasbishnoi029/AI-Reviewer"><b>Explore repository ↗</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>02 / Aegis AI</h3>
+      <p>An experiment in intelligent workflows and practical automation.</p>
+      <a href="https://github.com/parasbishnoi029/Aegis-AI"><b>Explore repository ↗</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>03 / AI Resume Analyzer</h3>
+      <p>Turns a static resume into direct, actionable feedback.</p>
+      <a href="https://github.com/parasbishnoi029/AI-Resume-Analyzer"><b>Explore repository ↗</b></a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>04 / Parasfolio</h3>
+      <p>A home for my projects, experiments, and work in progress.</p>
+      <a href="https://parasfolio.qd.je/"><b>Visit site ↗</b></a>
+    </td>
+  </tr>
+</table>
 
-## Toolkit
+## Engineering orbit
+
+<img src="./assets/stack-orbit.svg" width="100%" alt="Technology orbit: Python, Kotlin, data, AI and cloud" />
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,kotlin,mysql,fastapi,firebase,supabase,gcp,cloudflare,vercel,netlify&theme=dark&perline=10" alt="Python, Kotlin, MySQL, FastAPI, Firebase, Supabase, Google Cloud, Cloudflare, Vercel, Netlify" />
+
+`Python` · `Kotlin` · `MySQL` · `FastAPI` · `Firebase` · `Supabase` · `Google Cloud` · `Cloudflare` · `Vercel`
+
+`NumPy` · `Pandas` · `Matplotlib` · `Plotly` · `PyTorch` · `TensorFlow` · `OpenCV`
+
+</div>
+
+## The operating principle
+
+> **A project should answer one question clearly:** who does this help, and what gets easier because it exists?
+
+That is why I am drawn to ML, data, and applications. The interesting part is not the buzzword. It is using technology to make a real decision, task, or workflow better.
+
+<br/>
+
+<div align="center">
+  <a href="https://www.instagram.com/parasbishnoi.03/">Instagram</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.facebook.com/paras.bishnoi.29">Facebook</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/parasbishnoi029?tab=repositories">All repositories</a>
   <br/><br/>
-  <code>NumPy</code> · <code>Pandas</code> · <code>Matplotlib</code> · <code>Plotly</code> · <code>PyTorch</code> · <code>TensorFlow</code> · <code>OpenCV</code>
-</div>
-
-## The lab
-
-<details>
-<summary><b>What I am exploring</b></summary>
-<br/>
-
-- Reliable ML pipelines and practical model integration.
-- Data visualisation that helps people make decisions.
-- Mobile and web applications with a real user problem behind them.
-</details>
-
-<details>
-<summary><b>GitHub activity</b></summary>
-<br/>
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=parasbishnoi029&hide_border=true&background=0D1117&ring=8B5CF6&fire=F472B6&currStreakLabel=8B5CF6&sideLabels=C4B5FD&dates=64748B&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="GitHub contribution streak" />
-</div>
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&bg_color=0D1117&color=C4B5FD&line=8B5CF6&point=F472B6&area=true&area_color=312E81&hide_border=true" alt="Contribution activity graph" width="100%" />
-
-</details>
-
-<details>
-<summary><b>3D contribution model</b></summary>
-<br/>
-
-The repository includes a workflow that generates a real 3D contribution SVG. Run <code>Generate 3D contribution graph</code> once in the Actions tab, then uncomment this line:
-
-```html
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D GitHub contribution graph" />
-```
-
-</details>
-
-<br/>
-
-<div align="center">
-  <a href="https://www.instagram.com/parasbishnoi.03/"><img src="https://img.shields.io/badge/Instagram-111827?style=flat-square&logo=instagram&logoColor=F472B6" alt="Instagram" /></a>
-  <a href="https://www.facebook.com/paras.bishnoi.29"><img src="https://img.shields.io/badge/Facebook-111827?style=flat-square&logo=facebook&logoColor=60A5FA" alt="Facebook" /></a>
-  <img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=flat-square&color=8B5CF6&label=views" alt="Profile views" />
+  <sub>PARAS BISHNOI / BUILDING WITH CURIOSITY AND INTENT</sub>
 </div>
