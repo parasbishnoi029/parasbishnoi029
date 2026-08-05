@@ -1,18 +1,10 @@
 <div align="center">
-  <img src="./assets/hero-neural-desert.png" alt="A neural network rising from a neon desert" width="100%" />
+  <img src="./assets/quantum-core.svg" alt="Animated 3D data core — Paras Bishnoi" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-
-# PARAS BISHNOI
-
-### SOFTWARE DEVELOPER · ML & DATA ENTHUSIAST
-
-<sub>Designing useful systems from data, code, and stubborn curiosity.</sub>
-
-<br/><br/>
 
 <a href="https://parasfolio.qd.je/"><img src="https://img.shields.io/badge/ENTER_PARASFOLIO-7C3AED?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0B1020" alt="Visit Parasfolio" /></a>
 <a href="mailto:parasbishnoi012@gmail.com"><img src="https://img.shields.io/badge/CONTACT_ME-00B8D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B1020" alt="Email Paras" /></a>
@@ -23,10 +15,10 @@
 
 ```text
 ╭──────────────────  SYSTEM STATUS  ──────────────────╮
-│  FOCUS       Machine Learning · Data Science · Apps │
-│  BUILDING    Projects that solve real problems      │
-│  LEARNING    Python · Kotlin · Cloud tooling        │
-│  OPERATING   Coffee → Code → Iterate                │
+│  FOCUS       Machine Learning · Data Science · Apps   │
+│  BUILDING    Projects that solve real problems        │
+│  LEARNING    Python · Kotlin · Cloud tooling          │
+│  OPERATING   Coffee → Code → Iterate                  │
 ╰─────────────────────────────────────────────────────╯
 ```
 
