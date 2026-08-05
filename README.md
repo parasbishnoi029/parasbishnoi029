@@ -1,24 +1,116 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Paras%20Bishnoi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Software%20Developer%20%7C%20ML%20%26%20Data%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
+```
+██████╗  █████╗ ██████╗  █████╗ ███████╗
+██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝
+██████╔╝███████║██████╔╝███████║███████╗
+██╔═══╝ ██╔══██║██╔══██╗██╔══██║╚════██║
+██║     ██║  ██║██║  ██║██║  ██║███████║
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ═══╝
+   Software Developer · ML & Data Enthusiast
+```
 
-<a href="https://parasfolio.qd.je/">
-  <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_Now-6C63FF?style=for-the-badge" />
-</a>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=800&color=6C63FF&center=true&vCenter=true&width=550&lines=Python+%7C+Kotlin+%7C+Machine+Learning;Building+things+that+run+on+coffee+%E2%98%95;Always+learning%2C+always+shipping" alt="typing" />
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=800&color=6C63FF&center=true&vCenter=true&width=600&lines=Python+%7C+Kotlin+%7C+Machine+Learning;Building+things+that+run+on+coffee+%E2%98%95;Always+learning%2C+always+shipping" alt="Typing SVG" />
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-parasfolio.qd.je-6C63FF?style=for-the-badge)](https://parasfolio.qd.je/)
+[![Views](https://komarev.com/ghpvc/?username=parasbishnoi029&icon=10&color=6C63FF&style=for-the-badge&label=PROFILE+VIEWS)](https://parasfolio.qd.je/)
+
+</div>
+
+<br>
+
+## 🧭 Quick Nav
+
+<div align="center">
+
+[![About](https://img.shields.io/badge/📌_About-2b2b2b?style=for-the-badge)](#-about-me)
+[![Stack](https://img.shields.io/badge/🛠️_Tech_Stack-2b2b2b?style=for-the-badge)](#️-tech-stack)
+[![Stats](https://img.shields.io/badge/📊_Stats-2b2b2b?style=for-the-badge)](#-github-stats)
+[![Connect](https://img.shields.io/badge/🌐_Connect-2b2b2b?style=for-the-badge)](#-connect-with-me)
 
 </div>
 
 ---
 
-## 🚀 About Me
+## 📌 About Me
 
-- 🔭 Currently building projects across **ML, data science, and app development**
-- 🌱 Constantly leveling up in **Python, Kotlin, and cloud tooling**
-- 💬 Ask me about **Python, ML pipelines, or data visualization**
-- 📫 Reach me at **parasbishnoi012@gmail.com**
-- ⚡ Fun fact: I turn coffee into code (and occasionally bugs)
+```yaml
+name: "Paras Bishnoi"
+role: "Software Developer | ML & Data Enthusiast"
+focus: ["Python", "Kotlin", "Machine Learning", "Data Visualization"]
+currently_building: "projects across ML, data science & app dev"
+currently_learning: "cloud infra & deployment tooling"
+reach_me: "parasbishnoi012@gmail.com"
+fun_fact: "turns coffee into code (and occasionally bugs)"
+```
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+**Languages**
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Kotlin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+**Data · ML · Visualization**
+
+![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=Matplotlib&logoColor=black)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/opencv-white?style=for-the-badge&logo=opencv&logoColor=black)
+
+**Backend · Cloud · Infra**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
+**Tools**
+
+![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&logoColor=white)
+
+</div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![Followers](https://img.shields.io/github/followers/parasbishnoi029?style=for-the-badge&color=6C63FF&labelColor=2b2b2b)
+![Public Repos](https://img.shields.io/badge/dynamic/json?style=for-the-badge&color=6C63FF&labelColor=2b2b2b&label=Public%20Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fparasbishnoi029)
+
+</div>
+
+| Metric | Badge |
+|---|---|
+| **Last Active** | ![Last Commit](https://img.shields.io/github/last-commit/parasbishnoi029/parasbishnoi029?style=flat-square&color=6C63FF) |
+| **Account Age** | ![Account Created](https://img.shields.io/date/1609459200?style=flat-square&label=on%20GitHub%20since&color=6C63FF) |
+
+> Note: some dynamic badges (stars/top-language) depend on the GitHub API and may need your repo names filled in to render correctly — happy to wire those up if you share your main repos.
+
+---
+
+## 🚀 Currently
+
+| | |
+|---|---|
+| 🔭 **Working on** | Projects across ML, data science & app development |
+| 🌱 **Learning** | Cloud infra, deployment pipelines & advanced Kotlin |
+| 🤝 **Open to** | Collaboration on Python / ML / data-viz projects |
+| 💬 **Ask me about** | Python, ML pipelines, data visualization |
 
 ---
 
@@ -36,86 +128,8 @@
 
 ---
 
-## 💻 Tech Stack
-
 <div align="center">
 
-### Languages
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Kotlin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-### Data · ML · Visualization
-![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/opencv-white?style=for-the-badge&logo=opencv&logoColor=black)
-
-### Backend · Cloud · Infra
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-
-### Tools
-![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&logoColor=white)
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img src="https://github-readme-stats.shion.dev/api?username=parasbishnoi029&theme=shadow_red&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" width="49%"/>
-<img src="https://github-readme-stats.shion.dev/api/top-langs/?username=parasbishnoi029&theme=shadow_red&hide_border=true&include_all_commits=true&count_private=true&layout=compact" width="49%"/>
-
-<img src="https://streak-stats.demolab.com/?user=parasbishnoi029&theme=shadow_red&hide_border=true" width="70%"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&theme=redical&hide_border=true" width="100%"/>
-
-</div>
-
----
-
-## 🏆 Trophies
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=parasbishnoi029&theme=shadow_red&no-frame=true&no-bg=false&margin-w=4&row=1"/>
-</div>
-
----
-
-## 🔝 Top Contributed Repo
-
-<div align="center">
-<img src="https://github-contributor-stats.vercel.app/api?username=parasbishnoi029&limit=5&theme=shadow_red&combine_all_yearly_contributions=true"/>
-</div>
-
----
-
-### ✍️ Random Dev Quote
-
-<div align="center">
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/>
-</div>
-
----
-
-<div align="center">
-
-[![](https://komarev.com/ghpvc/?username=parasbishnoi029&icon=10&color=6C63FF&style=for-the-badge&label=PROFILE+VIEWS)](https://parasfolio.qd.je/)
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
-
-<sub>Proudly built with <a href="https://gprm.itsvg.in">GPRM</a></sub>
+<sub>Built and maintained by <b>Paras Bishnoi</b> · Badge-powered, image-free, fast-loading ⚡</sub>
 
 </div>
