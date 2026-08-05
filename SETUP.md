@@ -23,8 +23,8 @@ Go to the repository’s **Actions** tab and enable workflows if GitHub asks. Ru
 
 | Workflow | What it produces | Notes |
 | :-- | :-- | :-- |
-| `snake.yml` | Animated contribution snake on the `output` branch | First run creates the branch used by the image URL. |
-| `summary.yml` | Summary-card files in `profile-summary-card-output` | This runs independently; the README currently uses the stable public card endpoint. You may switch to the generated files later. |
+| `snake.yml` | Animated contribution snake on the `output` branch | First run creates the branch used by the image URL. Then uncomment its block in `README.md`. |
+| `summary.yml` | Summary-card files in `profile-summary-card-output` | Kept available as an optional generated asset; the visible README deliberately does not depend on it. |
 | `metrics.yml` | WakaTime content inside the marked README section | Requires the secret below. |
 
 ## 4. Add the WakaTime secret (optional)
