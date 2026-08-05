@@ -1,131 +1,106 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:0B1020,35:1D1650,70:6C63FF,100:FF4ECD&text=Paras%20Bishnoi&fontColor=FFFFFF&fontSize=64&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20ML%20%26%20Data%20Enthusiast&descAlignY=60&descSize=20&animation=fadeIn" width="100%" alt="Paras Bishnoi — AI, ML and Data Enthusiast" />
-
-  <a href="https://parasfolio.qd.je/"><img src="https://img.shields.io/badge/EXPLORE_MY_WORK-6C63FF?style=for-the-badge&logo=vercel&logoColor=white&labelColor=111827" alt="Visit Parasfolio" /></a>
-  <a href="https://github.com/parasbishnoi029?tab=followers"><img src="https://img.shields.io/github/followers/parasbishnoi029?style=for-the-badge&label=FOLLOW&color=FF4ECD&labelColor=111827" alt="GitHub followers" /></a>
-
-  <br/><br/>
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&duration=2800&pause=900&color=9D8CFF&center=true&vCenter=true&width=720&lines=Python+%C2%B7+Kotlin+%C2%B7+Machine+Learning;Turning+data+into+useful+products;Always+learning.+Always+shipping." alt="Python, Kotlin, Machine Learning — Turning data into useful products" />
+  <img src="./assets/hero-neural-desert.png" alt="A neural network rising from a neon desert" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
 
-`01 / ABOUT`&nbsp;&nbsp;&nbsp; `02 / WORK`&nbsp;&nbsp;&nbsp; `03 / STACK`&nbsp;&nbsp;&nbsp; `04 / ANALYTICS`&nbsp;&nbsp;&nbsp; `05 / CONNECT`
+# PARAS BISHNOI
+
+### SOFTWARE DEVELOPER · ML & DATA ENTHUSIAST
+
+<sub>Designing useful systems from data, code, and stubborn curiosity.</sub>
+
+<br/><br/>
+
+<a href="https://parasfolio.qd.je/"><img src="https://img.shields.io/badge/ENTER_PARASFOLIO-7C3AED?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0B1020" alt="Visit Parasfolio" /></a>
+<a href="mailto:parasbishnoi012@gmail.com"><img src="https://img.shields.io/badge/CONTACT_ME-00B8D9?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B1020" alt="Email Paras" /></a>
 
 </div>
 
----
+<br/>
 
-## 01 / About
-
-```yaml
-name: Paras Bishnoi
-role: Software Developer
-focus: [Machine Learning, Data Science, App Development]
-currently_leveling_up: [Python, Kotlin, Cloud Tooling]
-ask_me_about: [ML Pipelines, Data Visualisation, Python]
-fuel: Coffee → Code → Occasional bugs
+```text
+╭──────────────────  SYSTEM STATUS  ──────────────────╮
+│  FOCUS       Machine Learning · Data Science · Apps │
+│  BUILDING    Projects that solve real problems      │
+│  LEARNING    Python · Kotlin · Cloud tooling        │
+│  OPERATING   Coffee → Code → Iterate                │
+╰─────────────────────────────────────────────────────╯
 ```
 
-I build projects at the intersection of data, machine learning, and apps. The goal is simple: make the output useful, not merely impressive in a screenshot.
+## / MANIFESTO
 
----
+I am a software developer interested in the useful edge of machine learning: data pipelines, visualisation, and applications that people can actually work with. I care about getting the fundamentals right before adding noise.
 
-## 02 / Selected Work
+> **Current question:** How do you turn data into something people can understand and act on?
 
-<div align="center">
-  <img src="./assets/project-grid.svg" alt="Featured projects" width="100%" />
-</div>
+<br/>
 
-| Project | What it is | Link |
-| :-- | :-- | :-- |
-| **AI Reviewer** | AI-assisted code review and developer feedback. | [Explore →](https://github.com/parasbishnoi029/AI-Reviewer) |
-| **Aegis AI** | An AI project built around smart workflows and automation. | [Explore →](https://github.com/parasbishnoi029/Aegis-AI) |
-| **AI Resume Analyzer** | Resume analysis with direct, practical feedback. | [Explore →](https://github.com/parasbishnoi029/AI-Resume-Analyzer) |
-| **Parasfolio** | My digital home for work, experiments, and projects. | [Visit →](https://parasfolio.qd.je/) |
+## / PROJECT ARCHIVE
 
-> Check the first three repository links before pushing. Wrong URLs are worse than no URLs.
+<img src="./assets/project-grid.svg" alt="Featured projects: AI Reviewer, Aegis AI, AI Resume Analyzer, and Parasfolio" width="100%" />
 
----
+<table>
+  <tr>
+    <td width="50%"><h3>01 — AI Reviewer</h3><p>AI-assisted code review for clearer feedback and faster fixes.</p><a href="https://github.com/parasbishnoi029/AI-Reviewer">OPEN PROJECT ↗</a></td>
+    <td width="50%"><h3>02 — Aegis AI</h3><p>An exploration of intelligent automation and practical workflows.</p><a href="https://github.com/parasbishnoi029/Aegis-AI">OPEN PROJECT ↗</a></td>
+  </tr>
+  <tr>
+    <td width="50%"><h3>03 — AI Resume Analyzer</h3><p>Turns resumes into clear, actionable feedback.</p><a href="https://github.com/parasbishnoi029/AI-Resume-Analyzer">OPEN PROJECT ↗</a></td>
+    <td width="50%"><h3>04 — Parasfolio</h3><p>My portfolio: work, experiments, and the things I am building.</p><a href="https://parasfolio.qd.je/">VISIT SITE ↗</a></td>
+  </tr>
+</table>
 
-## 03 / Toolbox
+<sub>Check the repository URLs before publishing. A profile that points to missing work is not premium; it is unfinished.</sub>
 
-<div align="center">
+<br/><br/>
 
-**LANGUAGES**
-
-![Python](https://img.shields.io/badge/Python-111827?style=for-the-badge&logo=python&logoColor=FFD43B)
-![Kotlin](https://img.shields.io/badge/Kotlin-111827?style=for-the-badge&logo=kotlin&logoColor=B98CFF)
-![MySQL](https://img.shields.io/badge/MySQL-111827?style=for-the-badge&logo=mysql&logoColor=7DCFFF)
-
-**DATA · ML · VISUALISATION**
-
-![NumPy](https://img.shields.io/badge/NumPy-151A2B?style=for-the-badge&logo=numpy&logoColor=7AA2F7)
-![Pandas](https://img.shields.io/badge/Pandas-151A2B?style=for-the-badge&logo=pandas&logoColor=E0AF68)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-151A2B?style=for-the-badge&logo=plotly&logoColor=FFFFFF)
-![Plotly](https://img.shields.io/badge/Plotly-151A2B?style=for-the-badge&logo=plotly&logoColor=3FBAF8)
-![PyTorch](https://img.shields.io/badge/PyTorch-151A2B?style=for-the-badge&logo=pytorch&logoColor=FF6B6B)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-151A2B?style=for-the-badge&logo=tensorflow&logoColor=FFB86C)
-![OpenCV](https://img.shields.io/badge/OpenCV-151A2B?style=for-the-badge&logo=opencv&logoColor=9D8CFF)
-
-**BACKEND · CLOUD · INFRA**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-111827?style=for-the-badge&logo=fastapi&logoColor=00D9A5)
-![Firebase](https://img.shields.io/badge/Firebase-111827?style=for-the-badge&logo=firebase&logoColor=FFCA28)
-![Supabase](https://img.shields.io/badge/Supabase-111827?style=for-the-badge&logo=supabase&logoColor=3ECF8E)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-111827?style=for-the-badge&logo=googlecloud&logoColor=4285F4)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-111827?style=for-the-badge&logo=cloudflare&logoColor=F38020)
-![Vercel](https://img.shields.io/badge/Vercel-111827?style=for-the-badge&logo=vercel&logoColor=FFFFFF)
-![Netlify](https://img.shields.io/badge/Netlify-111827?style=for-the-badge&logo=netlify&logoColor=00C7B7)
-
-**TOOLS**
-
-![Anaconda](https://img.shields.io/badge/Anaconda-151A2B?style=for-the-badge&logo=anaconda&logoColor=44A833)
-![Canva](https://img.shields.io/badge/Canva-151A2B?style=for-the-badge&logo=canva&logoColor=00C4CC)
-
-</div>
-
----
-
-## 04 / GitHub Analytics
+## / TOOLCHAIN
 
 <div align="center">
-  <img height="175" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=parasbishnoi029&show_icons=true&hide_border=true&count_private=true&bg_color=0D1117&title_color=9D8CFF&icon_color=FF4ECD&text_color=C9D1D9&ring_color=6C63FF" alt="Paras's GitHub stats" />
-  <img height="175" src="https://streak-stats.demolab.com?user=parasbishnoi029&hide_border=true&background=0D1117&ring=FF4ECD&fire=FFB86C&currStreakLabel=9D8CFF&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub streak" />
-  <br/>
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=parasbishnoi029&layout=compact&hide_border=true&bg_color=0D1117&title_color=9D8CFF&text_color=C9D1D9" alt="Top languages" />
+
+<img src="https://skillicons.dev/icons?i=python,kotlin,mysql,fastapi,firebase,supabase,gcp,cloudflare,vercel,netlify,anaconda&theme=dark&perline=11" alt="Python, Kotlin, MySQL, FastAPI, Firebase, Supabase, Google Cloud, Cloudflare, Vercel, Netlify, Anaconda" />
+
+<br/><br/>
+
+`NumPy` · `Pandas` · `Matplotlib` · `Plotly` · `PyTorch` · `TensorFlow` · `OpenCV` · `Machine Learning` · `Data Visualisation`
+
 </div>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&bg_color=0D1117&color=C9D1D9&line=9D8CFF&point=FF4ECD&area=true&area_color=6C63FF&hide_border=true" alt="Contribution activity graph" width="100%" />
+## / LIVE SIGNAL
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=parasbishnoi029&hide_border=true&background=0B1020&ring=8B5CF6&fire=F472B6&currStreakLabel=22D3EE&sideLabels=C4B5FD&dates=64748B&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="GitHub contribution streak" />
+</div>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&bg_color=0B1020&color=C4B5FD&line=8B5CF6&point=F472B6&area=true&area_color=312E81&hide_border=true" alt="GitHub contribution activity" width="100%" />
 
 <!--
-  Enable snake.yml, run it once, then uncomment this block:
-  <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Contribution snake" />
+  After .github/workflows/contributions-3d.yml finishes once, uncomment this:
+  <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/profile-3d-contrib/profile-night-view.svg" width="100%" alt="3D GitHub contribution graph" />
 -->
 
----
+<br/>
 
-## 05 / Find Me Online
+## / TRANSMISSIONS
 
 <div align="center">
-  <a href="https://parasfolio.qd.je/"><img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=vercel&logoColor=9D8CFF" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/paras029"><img src="https://img.shields.io/badge/LinkedIn-111827?style=for-the-badge&logo=linkedin&logoColor=0A9CFF" alt="LinkedIn" /></a>
-  <a href="https://x.com/parasbishnoi03"><img src="https://img.shields.io/badge/X-111827?style=for-the-badge&logo=x&logoColor=FFFFFF" alt="X" /></a>
-  <a href="https://www.instagram.com/parasbishnoi.03/"><img src="https://img.shields.io/badge/Instagram-111827?style=for-the-badge&logo=instagram&logoColor=FF4ECD" alt="Instagram" /></a>
-  <a href="https://www.facebook.com/paras.bishnoi.29"><img src="https://img.shields.io/badge/Facebook-111827?style=for-the-badge&logo=facebook&logoColor=1877F2" alt="Facebook" /></a>
-  <a href="mailto:parasbishnoi012@gmail.com"><img src="https://img.shields.io/badge/Email-111827?style=for-the-badge&logo=gmail&logoColor=FF6B6B" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/paras029"><img src="https://img.shields.io/badge/LINKEDIN-0B1020?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn" /></a>
+  <a href="https://x.com/parasbishnoi03"><img src="https://img.shields.io/badge/X-0B1020?style=for-the-badge&logo=x&logoColor=F8FAFC" alt="X" /></a>
+  <a href="https://www.instagram.com/parasbishnoi.03/"><img src="https://img.shields.io/badge/INSTAGRAM-0B1020?style=for-the-badge&logo=instagram&logoColor=F472B6" alt="Instagram" /></a>
+  <a href="https://www.facebook.com/paras.bishnoi.29"><img src="https://img.shields.io/badge/FACEBOOK-0B1020?style=for-the-badge&logo=facebook&logoColor=60A5FA" alt="Facebook" /></a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=for-the-badge&color=6C63FF&label=PROFILE+VIEWS" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=flat-square&color=7C3AED&label=PROFILE+VIEWS" alt="Profile views" />
   <br/><br/>
-  <sub>Built with curiosity, improved through repetition, shipped with intent.</sub>
-  <br/>
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=110&color=0:FF4ECD,40:6C63FF,100:0B1020&section=footer" width="100%" alt="Footer wave" />
+  <sub>Made in India · Building in public · One useful system at a time</sub>
 </div>
