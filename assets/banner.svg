@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 460" role="img" aria-labelledby="title desc">
+  <title id="title">Paras Bishnoi cyberpunk developer banner</title>
+  <desc id="desc">Tokyo Night styled banner with neon grid and developer profile title.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1b26"/><stop offset=".55" stop-color="#24283b"/><stop offset="1" stop-color="#16161e"/></linearGradient>
+    <linearGradient id="neon" x1="0" x2="1"><stop stop-color="#7aa2f7"/><stop offset=".5" stop-color="#bb9af7"/><stop offset="1" stop-color="#7dcfff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="#7aa2f7" stroke-opacity=".1"/></pattern>
+  </defs>
+  <rect width="1600" height="460" fill="url(#bg)"/><rect width="1600" height="460" fill="url(#grid)"/>
+  <path d="M0 365C280 250 480 480 770 345S1240 210 1600 328V460H0Z" fill="#7aa2f7" fill-opacity=".08"/>
+  <path d="M0 365C280 250 480 480 770 345S1240 210 1600 328" fill="none" stroke="url(#neon)" stroke-width="3" filter="url(#glow)"/>
+  <g fill="none" stroke="#bb9af7" stroke-width="2" stroke-opacity=".7"><path d="M90 80h120v48h-70v65"/><path d="M1390 330h120v-48h-70v-65"/></g>
+  <text x="110" y="188" fill="#c0caf5" font-family="Arial, Helvetica, sans-serif" font-size="25" letter-spacing="8">HELLO, WORLD</text>
+  <text x="105" y="270" fill="url(#neon)" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" filter="url(#glow)">PARAS BISHNOI</text>
+  <text x="110" y="326" fill="#a9b1d6" font-family="Arial, Helvetica, sans-serif" font-size="29" letter-spacing="2">BUILDING INTELLIGENT SOFTWARE</text>
+  <text x="1290" y="115" fill="#7dcfff" font-family="monospace" font-size="21">&lt;/&gt;_</text>
+</svg>

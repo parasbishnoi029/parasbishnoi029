@@ -1,124 +1,117 @@
 <div align="center">
+  <img src="./assets/banner.svg" alt="Paras Bishnoi — Building intelligent software" width="100%" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Paras%20Bishnoi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Software%20Developer%20%7C%20ML%20%26%20Data%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
-
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&duration=3000&pause=800&color=6C63FF&center=true&vCenter=true&width=550&lines=Python+%7C+Kotlin+%7C+Machine+Learning;Building+things+that+run+on+coffee+%E2%98%95;Always+learning%2C+always+shipping" alt="typing" />
-
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-parasfolio.qd.je-6C63FF?style=for-the-badge)](https://parasfolio.qd.je/)
-[![Views](https://komarev.com/ghpvc/?username=parasbishnoi029&icon=10&color=6C63FF&style=for-the-badge&label=PROFILE+VIEWS)](https://parasfolio.qd.je/)
-
+  <br />
+  <a href="https://github.com/parasbishnoi029?tab=followers"><img src="https://img.shields.io/github/followers/parasbishnoi029?label=Followers&style=for-the-badge&color=7aa2f7&labelColor=1a1b26" alt="Followers" /></a>
+  <a href="https://github.com/parasbishnoi029"><img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=for-the-badge&color=bb9af7&label=PROFILE+VIEWS" alt="Profile views" /></a>
 </div>
 
-<div align="center">
+<br />
 
-[![About](https://img.shields.io/badge/📌_About-2b2b2b?style=for-the-badge)](#-about-me)
-[![Stack](https://img.shields.io/badge/🛠️_Tech_Stack-2b2b2b?style=for-the-badge)](#️-tech-stack)
-[![Stats](https://img.shields.io/badge/📊_Stats-2b2b2b?style=for-the-badge)](#-github-analytics)
-[![Connect](https://img.shields.io/badge/🌐_Connect-2b2b2b?style=for-the-badge)](#-connect-with-me)
-
-</div>
-
----
-
-## 📌 About Me
-
-```yaml
-name: "Paras Bishnoi"
-role: "Software Developer | ML & Data Enthusiast"
-focus: ["Python", "Kotlin", "Machine Learning", "Data Visualization"]
-currently_building: "projects across ML, data science & app dev"
-currently_learning: "cloud infra & deployment tooling"
-reach_me: "parasbishnoi012@gmail.com"
-fun_fact: "turns coffee into code (and occasionally bugs)"
+```text
+> booting /parasbishnoi029 ...
+  role       Full-stack & AI developer
+  mission    Turn difficult problems into useful products.
+  now        Building, learning, shipping.
 ```
 
-| | |
-|---|---|
-| 🔭 **Working on** | Projects across ML, data science & app development |
-| 🌱 **Learning** | Cloud infra, deployment pipelines & advanced Kotlin |
-| 🤝 **Open to** | Collaboration on Python / ML / data-viz projects |
-| 💬 **Ask me about** | Python, ML pipelines, data visualization |
+## ◈ Command Center
 
----
+| Signal | Current status |
+| :-- | :-- |
+| Focus | Applied AI, developer tools, and full-stack products |
+| Building | Reliable software with useful, human-first interfaces |
+| Learning | LLM engineering, MLOps, and scalable systems |
+| Open to | Collaboration, meaningful open source, and interesting problems |
 
-## 🛠️ Tech Stack
+## ◈ Featured Projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🤖 AI Reviewer</h3>
+      <p>AI-assisted code review built to surface issues and improve developer feedback loops.</p>
+      <p><a href="https://github.com/parasbishnoi029/AI-Reviewer">Repository →</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛡️ Aegis AI</h3>
+      <p>An AI product focused on practical intelligence, automation, and a cleaner user experience.</p>
+      <p><a href="https://github.com/parasbishnoi029/Aegis-AI">Repository →</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📄 AI Resume Analyzer</h3>
+      <p>Resume analysis tooling that turns static documents into actionable feedback.</p>
+      <p><a href="https://github.com/parasbishnoi029/AI-Resume-Analyzer">Repository →</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌐 Parasfolio</h3>
+      <p>A portfolio built to present projects, skills, and work without the usual clutter.</p>
+      <p><a href="https://github.com/parasbishnoi029/Parasfolio">Repository →</a></p>
+    </td>
+  </tr>
+</table>
+
+> **Reality check:** confirm the four repository slugs above before pushing. GitHub profile READMEs cannot reliably fetch arbitrary repository metadata by themselves; the links are intentionally simple and durable.
+
+## ◈ GitHub Telemetry
 
 <div align="center">
-
-**Languages**
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Kotlin](https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-**Data · ML · Visualization**
-
-![NumPy](https://img.shields.io/badge/numpy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/opencv-white?style=for-the-badge&logo=opencv&logoColor=black)
-
-**Backend · Cloud · Infra**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
-![Vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-
-**Tools**
-
-![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&logoColor=white)
-
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=parasbishnoi029&show_icons=true&hide_border=true&count_private=true&bg_color=1a1b26&title_color=7aa2f7&icon_color=bb9af7&text_color=c0caf5&ring_color=7dcfff" alt="GitHub statistics" />
+  <img height="170" src="https://github-readme-streak-stats.herokuapp.com?user=parasbishnoi029&hide_border=true&background=1A1B26&ring=7AA2F7&fire=FF9E64&currStreakLabel=C0CAF5&sideLabels=BB9AF7&dates=565F89&currStreakNum=C0CAF5&sideNums=C0CAF5" alt="GitHub streak" />
+  <br />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parasbishnoi029&layout=compact&hide_border=true&bg_color=1a1b26&title_color=7aa2f7&text_color=c0caf5" alt="Top languages" />
 </div>
 
----
-
-## 📊 GitHub Analytics
-
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=parasbishnoi029&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" width="49%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parasbishnoi029&layout=compact&theme=radical&hide_border=true" width="49%"/>
-
-<img src="https://streak-stats.demolab.com/?user=parasbishnoi029&theme=radical&hide_border=true" width="70%"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&theme=redical&hide_border=true" width="100%"/>
-
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parasbishnoi029&theme=tokyonight" alt="Profile activity summary" width="100%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parasbishnoi029&theme=tokyonight" alt="Repositories per language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parasbishnoi029&theme=tokyonight" alt="Most committed languages" />
 </div>
 
----
-
-## 🏆 Trophies
-
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=parasbishnoi029&theme=radical&no-frame=true&margin-w=4&row=1"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=parasbishnoi029&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" alt="GitHub trophies" width="100%" />
 </div>
 
----
+### Contribution flow
 
-## 🌐 Connect With Me
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&bg_color=1a1b26&color=c0caf5&line=7aa2f7&point=bb9af7&area=true&hide_border=true" alt="Contribution graph" width="100%" />
 
+<!-- Snake output is generated by .github/workflows/snake.yml after the first successful run. -->
 <div align="center">
-
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/paras.bishnoi.29)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/parasbishnoi.03/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/paras029)
-[![X](https://img.shields.io/badge/X-black?style=for-the-badge&logo=X&logoColor=white)](https://x.com/parasbishnoi03)
-[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parasbishnoi012@gmail.com)
-
+  <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake animation" width="100%" />
 </div>
 
----
+## ◈ Stack, without badge landfill
+
+| Domain | Tools I use or am actively deepening |
+| :-- | :-- |
+| **AI / ML** | Python, LLM APIs, prompt engineering, data analysis |
+| **Frontend** | React, Next.js, JavaScript, TypeScript, HTML, CSS |
+| **Backend** | Node.js, Express, REST APIs, Python |
+| **Data** | MongoDB, PostgreSQL, MySQL, Firebase |
+| **Cloud / DevOps** | Git, GitHub Actions, Docker, Vercel, Linux |
+| **Design / workflow** | Figma, Postman, VS Code |
+
+## ◈ Coding Metrics
+
+<!--START_SECTION:waka-->
+```text
+WakaTime is not connected yet.
+Follow SETUP.md to enable automatic weekly coding metrics.
+```
+<!--END_SECTION:waka-->
+
+## ◈ Connect
 
 <div align="center">
+  <a href="https://github.com/parasbishnoi029"><img src="https://img.shields.io/badge/GitHub-1a1b26?style=for-the-badge&logo=github&logoColor=c0caf5" alt="GitHub" /></a>
+  <!-- Replace the placeholders below with real links before publishing. -->
+  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-1a1b26?style=for-the-badge&logo=gmail&logoColor=ff9e64" alt="Email" /></a>
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-1a1b26?style=for-the-badge&logo=linkedin&logoColor=7aa2f7" alt="LinkedIn" /></a>
+</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
-
+<div align="center">
+  <sub>Built with intent. Maintained with curiosity. No empty hype.</sub>
 </div>
