@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:0B1020,35:1D1650,70:6C63FF,100:FF4ECD&text=Paras%20Bishnoi&fontColor=FFFFFF&fontSize=64&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20ML%20%26%20Data%20Enthusiast&descAlignY=60&descSize=20&animation=fadeIn" width="100%" alt="Paras Bishnoi — Software Developer, ML and Data Enthusiast" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:0B1020,35:1D1650,70:6C63FF,100:FF4ECD&text=Paras%20Bishnoi&fontColor=FFFFFF&fontSize=64&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20ML%20%26%20Data%20Enthusiast&descAlignY=60&descSize=20&animation=fadeIn" width="100%" alt="Paras Bishnoi — AI, ML and Data Enthusiast" />
 
   <a href="https://parasfolio.qd.je/"><img src="https://img.shields.io/badge/EXPLORE_MY_WORK-6C63FF?style=for-the-badge&logo=vercel&logoColor=white&labelColor=111827" alt="Visit Parasfolio" /></a>
   <a href="https://github.com/parasbishnoi029?tab=followers"><img src="https://img.shields.io/github/followers/parasbishnoi029?style=for-the-badge&label=FOLLOW&color=FF4ECD&labelColor=111827" alt="GitHub followers" /></a>
