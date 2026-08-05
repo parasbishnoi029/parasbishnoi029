@@ -1,14 +1,6 @@
 <div align="center">
 
-```
-██████╗  █████╗ ██████╗  █████╗ ███████╗
-██╔══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝
-██████╔╝███████║██████╔╝███████║███████╗
-██╔═══╝ ██╔══██║██╔══██╗██╔══██║╚════██║
-██║     ██║  ██║██║  ██║██║  ██║███████║
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ═══╝
-   Software Developer · ML & Data Enthusiast
-```
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Paras%20Bishnoi&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Software%20Developer%20%7C%20ML%20%26%20Data%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=800&color=6C63FF&center=true&vCenter=true&width=550&lines=Python+%7C+Kotlin+%7C+Machine+Learning;Building+things+that+run+on+coffee+%E2%98%95;Always+learning%2C+always+shipping" alt="typing" />
 
@@ -17,15 +9,11 @@
 
 </div>
 
-<br>
-
-## 🧭 Quick Nav
-
 <div align="center">
 
 [![About](https://img.shields.io/badge/📌_About-2b2b2b?style=for-the-badge)](#-about-me)
 [![Stack](https://img.shields.io/badge/🛠️_Tech_Stack-2b2b2b?style=for-the-badge)](#️-tech-stack)
-[![Stats](https://img.shields.io/badge/📊_Stats-2b2b2b?style=for-the-badge)](#-github-stats)
+[![Stats](https://img.shields.io/badge/📊_Stats-2b2b2b?style=for-the-badge)](#-github-analytics)
 [![Connect](https://img.shields.io/badge/🌐_Connect-2b2b2b?style=for-the-badge)](#-connect-with-me)
 
 </div>
@@ -43,6 +31,13 @@ currently_learning: "cloud infra & deployment tooling"
 reach_me: "parasbishnoi012@gmail.com"
 fun_fact: "turns coffee into code (and occasionally bugs)"
 ```
+
+| | |
+|---|---|
+| 🔭 **Working on** | Projects across ML, data science & app development |
+| 🌱 **Learning** | Cloud infra, deployment pipelines & advanced Kotlin |
+| 🤝 **Open to** | Collaboration on Python / ML / data-viz projects |
+| 💬 **Ask me about** | Python, ML pipelines, data visualization |
 
 ---
 
@@ -85,32 +80,52 @@ fun_fact: "turns coffee into code (and occasionally bugs)"
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
-![Followers](https://img.shields.io/github/followers/parasbishnoi029?style=for-the-badge&color=6C63FF&labelColor=2b2b2b)
-![Public Repos](https://img.shields.io/badge/dynamic/json?style=for-the-badge&color=6C63FF&labelColor=2b2b2b&label=Public%20Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fparasbishnoi029)
+<img src="https://github-readme-stats.shion.dev/api?username=parasbishnoi029&theme=shadow_red&hide_border=true&include_all_commits=true&count_private=true&show_icons=true" width="49%"/>
+<img src="https://github-readme-stats.shion.dev/api/top-langs/?username=parasbishnoi029&theme=shadow_red&hide_border=true&include_all_commits=true&count_private=true&layout=compact" width="49%"/>
+
+<img src="https://streak-stats.demolab.com/?user=parasbishnoi029&theme=shadow_red&hide_border=true" width="70%"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=parasbishnoi029&theme=redical&hide_border=true" width="100%"/>
 
 </div>
 
-| Metric | Badge |
-|---|---|
-| **Last Active** | ![Last Commit](https://img.shields.io/github/last-commit/parasbishnoi029/parasbishnoi029?style=flat-square&color=6C63FF) |
-| **Account Age** | ![Account Created](https://img.shields.io/date/1609459200?style=flat-square&label=on%20GitHub%20since&color=6C63FF) |
+---
 
-> Note: some dynamic badges (stars/top-language) depend on the GitHub API and may need your repo names filled in to render correctly — happy to wire those up if you share your main repos.
+## 🏆 Trophies
+
+<div align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=parasbishnoi029&theme=shadow_red&no-frame=true&no-bg=false&margin-w=4&row=1"/>
+</div>
 
 ---
 
-## 🚀 Currently
+## 🔝 Top Contributed Repo
 
-| | |
-|---|---|
-| 🔭 **Working on** | Projects across ML, data science & app development |
-| 🌱 **Learning** | Cloud infra, deployment pipelines & advanced Kotlin |
-| 🤝 **Open to** | Collaboration on Python / ML / data-viz projects |
-| 💬 **Ask me about** | Python, ML pipelines, data visualization |
+<div align="center">
+<img src="https://github-contributor-stats.vercel.app/api?username=parasbishnoi029&limit=5&theme=shadow_red&combine_all_yearly_contributions=true"/>
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake.svg" width="100%"/>
+</div>
+
+> The snake graph needs a one-time GitHub Actions workflow running in your `parasbishnoi029/parasbishnoi029` repo to generate that SVG — I can write that workflow file for you if you want it live.
+
+---
+
+### ✍️ Random Dev Quote
+
+<div align="center">
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical"/>
+</div>
 
 ---
 
@@ -130,6 +145,8 @@ fun_fact: "turns coffee into code (and occasionally bugs)"
 
 <div align="center">
 
-<sub>Built and maintained by <b>Paras Bishnoi</b> · Badge-powered, image-free, fast-loading ⚡</sub>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
+
+<sub>Proudly built with <a href="https://gprm.itsvg.in">GPRM</a></sub>
 
 </div>
