@@ -633,25 +633,28 @@
 <text x="0" y="128" font-size="13" fill="#c4f7d1" opacity="0.7">A</text>
 </g>
 </g>
+<rect width="900" height="260" fill="#4ade80" opacity="0">
+<animate attributeName="opacity" values="0;0;0.16;0.03;0.22;0;0;0;0;0" keyTimes="0;0.10;0.14;0.18;0.22;0.28;0.5;0.75;0.9;1" dur="4s" repeatCount="indefinite"/>
+</rect>
 <rect width="900" height="260" fill="url(#vignette)"/>
 <g text-anchor="middle" font-family="Fira Code, monospace" font-weight="700">
 <text x="450" y="108" font-size="46" fill="#ff3b6b" opacity="0.75">
 PARAS BISHNOI
-<animate attributeName="x" values="448;453;449;448" dur="2.6s" repeatCount="indefinite"/>
+<animate attributeName="x" values="448;448;454;448;448" keyTimes="0;0.10;0.14;0.18;1" dur="4s" repeatCount="indefinite"/>
 </text>
 <text x="450" y="108" font-size="46" fill="#06b6d4" opacity="0.75">
 PARAS BISHNOI
-<animate attributeName="x" values="452;447;451;452" dur="2.6s" repeatCount="indefinite"/>
+<animate attributeName="x" values="452;452;446;452;452" keyTimes="0;0.10;0.14;0.18;1" dur="4s" repeatCount="indefinite"/>
 </text>
 <text x="450" y="108" font-size="46" fill="#f8fafc">
 PARAS BISHNOI
-<animate attributeName="opacity" values="1;1;0.75;1;1;1;0.85;1" dur="3.4s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;1;0.7;1;1" keyTimes="0;0.10;0.14;0.18;1" dur="4s" repeatCount="indefinite"/>
 </text>
 </g>
 <g text-anchor="middle" font-family="Fira Code, monospace">
 <text x="450" y="142" font-size="16" letter-spacing="4" fill="#a855f7">
 AI ENGINEER // ML // DATA SCIENCE
-<animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
 </text>
 </g>
 <rect x="655" y="130" width="10" height="18" fill="#a855f7">
