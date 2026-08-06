@@ -4,6 +4,8 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=2600&pause=800&color=A855F7&center=true&vCenter=true&width=720&lines=Turning+raw+data+into+intelligent+systems;Building+AI+tools+people+actually+use;Python+%7C+Kotlin+%7C+Cloud+Engineering;Shipping+in+public.+Learning+in+public." alt="Typing SVG"/>
 
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/terminal-flex.gif" width="600"/>
+
 <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/flex-badge.svg" width="260"/>
 
 <br/>
@@ -14,6 +16,10 @@
 [![X](https://img.shields.io/badge/X-%40parasbishnoi03-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=030712)](https://x.com/parasbishnoi03)
 
 <img src="https://komarev.com/ghpvc/?username=parasbishnoi029&style=for-the-badge&color=A855F7&labelColor=030712&label=PROFILE+VIEWS"/>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/status-bar.svg" width="600"/>
 
 <br/><br/>
 
