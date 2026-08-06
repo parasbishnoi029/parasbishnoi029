@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN }}
         with:
           USERNAME: parasbishnoi029
           MAX_REPOS: 100
