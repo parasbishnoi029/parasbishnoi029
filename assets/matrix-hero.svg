@@ -1,0 +1,660 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#030712"/>
+<stop offset="100%" stop-color="#0a0f1f"/>
+</linearGradient>
+<radialGradient id="vignette" cx="50%" cy="45%" r="75%">
+<stop offset="55%" stop-color="#030712" stop-opacity="0"/>
+<stop offset="100%" stop-color="#030712" stop-opacity="0.95"/>
+</radialGradient>
+</defs>
+<rect width="900" height="260" fill="url(#bgGrad)"/>
+<g font-family="Fira Code, monospace">
+<g transform="translate(6,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="3.91s" begin="-2.9s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.47">0</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.47">1</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.47">マ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.47">ハ</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.47">ハ</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.47">サ</text>
+<text x="0" y="102" font-size="14" fill="#c4f7d1" opacity="0.82">1</text>
+</g>
+<g transform="translate(24,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.31s" begin="-2.65s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.43">1</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.43">0</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.43">ア</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.43">ナ</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.43">ハ</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.43">O</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.43">I</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.43">0</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.43">N</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.43">ナ</text>
+<text x="0" y="160" font-size="13" fill="#22c55e" opacity="0.43">0</text>
+<text x="0" y="176" font-size="13" fill="#c4f7d1" opacity="0.78">M</text>
+</g>
+<g transform="translate(42,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.36s" begin="-3.33s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.29">タ</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.29">0</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.29">Y</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.29">ラ</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.29">マ</text>
+<text x="0" y="80" font-size="13" fill="#c4f7d1" opacity="0.6399999999999999">サ</text>
+</g>
+<g transform="translate(60,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="5.64s" begin="-5.49s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.4">ワ</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.4">ワ</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.4">I</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.4">マ</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.4">1</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.4">1</text>
+<text x="0" y="102" font-size="14" fill="#c4f7d1" opacity="0.75">T</text>
+</g>
+<g transform="translate(78,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.59s" begin="-6.49s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.59">M</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.59">I</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.59">ワ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.59">A</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.59">ナ</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.59">0</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.59">ア</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.59">1</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.59">L</text>
+<text x="0" y="135" font-size="12" fill="#c4f7d1" opacity="0.94">ハ</text>
+</g>
+<g transform="translate(96,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.09s" begin="-3.71s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.32">マ</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.32">T</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.32">M</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.32">ワ</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.32">タ</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.32">ワ</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.32">ワ</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.32">ナ</text>
+<text x="0" y="136" font-size="14" fill="#22c55e" opacity="0.32">L</text>
+<text x="0" y="153" font-size="14" fill="#22c55e" opacity="0.32">マ</text>
+<text x="0" y="170" font-size="14" fill="#22c55e" opacity="0.32">0</text>
+<text x="0" y="187" font-size="14" fill="#c4f7d1" opacity="0.6699999999999999">L</text>
+</g>
+<g transform="translate(114,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.8s" begin="-3.69s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.27">タ</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.27">T</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.27">P</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.27">マ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.27">M</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.27">0</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.27">N</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.27">ハ</text>
+<text x="0" y="120" font-size="12" fill="#c4f7d1" opacity="0.62">L</text>
+</g>
+<g transform="translate(132,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="7.04s" begin="-4.53s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.31">P</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.31">マ</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.31">ア</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.31">ナ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.31">A</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.31">0</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.31">ラ</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.31">ナ</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.31">M</text>
+<text x="0" y="135" font-size="12" fill="#22c55e" opacity="0.31">H</text>
+<text x="0" y="150" font-size="12" fill="#c4f7d1" opacity="0.6599999999999999">P</text>
+</g>
+<g transform="translate(150,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.95s" begin="-4.94s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.31">1</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.31">N</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.31">N</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.31">マ</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.31">1</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.31">A</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.31">Y</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.31">A</text>
+<text x="0" y="128" font-size="13" fill="#c4f7d1" opacity="0.6599999999999999">P</text>
+</g>
+<g transform="translate(168,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="5.89s" begin="-2.27s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.49">1</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.49">カ</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.49">サ</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.49">M</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.49">タ</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.49">L</text>
+<text x="0" y="96" font-size="13" fill="#c4f7d1" opacity="0.84">Y</text>
+</g>
+<g transform="translate(186,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.13s" begin="-0.01s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.54">マ</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.54">N</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.54">0</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.54">L</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.54">1</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.54">カ</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.54">L</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.54">N</text>
+<text x="0" y="136" font-size="14" fill="#22c55e" opacity="0.54">マ</text>
+<text x="0" y="153" font-size="14" fill="#22c55e" opacity="0.54">M</text>
+<text x="0" y="170" font-size="14" fill="#22c55e" opacity="0.54">ラ</text>
+<text x="0" y="187" font-size="14" fill="#22c55e" opacity="0.54">カ</text>
+<text x="0" y="204" font-size="14" fill="#22c55e" opacity="0.54">ヤ</text>
+<text x="0" y="221" font-size="14" fill="#c4f7d1" opacity="0.89">Y</text>
+</g>
+<g transform="translate(204,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.11s" begin="-3.13s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.47">O</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.47">タ</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.47">O</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.47">カ</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.47">M</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.47">ヤ</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.47">M</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.47">O</text>
+<text x="0" y="136" font-size="14" fill="#22c55e" opacity="0.47">I</text>
+<text x="0" y="153" font-size="14" fill="#c4f7d1" opacity="0.82">ナ</text>
+</g>
+<g transform="translate(222,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="7.01s" begin="-5.83s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.37">I</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.37">ラ</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.37">H</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.37">0</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.37">カ</text>
+<text x="0" y="75" font-size="12" fill="#c4f7d1" opacity="0.72">ワ</text>
+</g>
+<g transform="translate(240,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.14s" begin="-5.81s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.32">A</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.32">ア</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.32">ア</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.32">1</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.32">H</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.32">ア</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.32">N</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.32">サ</text>
+<text x="0" y="136" font-size="14" fill="#c4f7d1" opacity="0.6699999999999999">サ</text>
+</g>
+<g transform="translate(258,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="7.1s" begin="-3.21s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.35">ナ</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.35">N</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.35">1</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.35">0</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.35">ナ</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.35">0</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.35">ヤ</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.35">P</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.35">L</text>
+<text x="0" y="135" font-size="12" fill="#22c55e" opacity="0.35">M</text>
+<text x="0" y="150" font-size="12" fill="#22c55e" opacity="0.35">ワ</text>
+<text x="0" y="165" font-size="12" fill="#c4f7d1" opacity="0.7">T</text>
+</g>
+<g transform="translate(276,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.42s" begin="-4.0s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.59">0</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.59">A</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.59">N</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.59">ハ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.59">A</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.59">ハ</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.59">0</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.59">ア</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.59">0</text>
+<text x="0" y="135" font-size="12" fill="#22c55e" opacity="0.59">M</text>
+<text x="0" y="150" font-size="12" fill="#c4f7d1" opacity="0.94">1</text>
+</g>
+<g transform="translate(294,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.26s" begin="-0.41s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.42">ハ</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.42">マ</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.42">L</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.42">H</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.42">ナ</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.42">N</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.42">サ</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.42">1</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.42">A</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.42">A</text>
+<text x="0" y="160" font-size="13" fill="#22c55e" opacity="0.42">H</text>
+<text x="0" y="176" font-size="13" fill="#22c55e" opacity="0.42">ハ</text>
+<text x="0" y="192" font-size="13" fill="#22c55e" opacity="0.42">H</text>
+<text x="0" y="208" font-size="13" fill="#c4f7d1" opacity="0.77">Y</text>
+</g>
+<g transform="translate(312,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.49s" begin="-0.85s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.43">T</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.43">1</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.43">1</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.43">L</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.43">M</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.43">M</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.43">カ</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.43">1</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.43">P</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.43">1</text>
+<text x="0" y="160" font-size="13" fill="#22c55e" opacity="0.43">ラ</text>
+<text x="0" y="176" font-size="13" fill="#c4f7d1" opacity="0.78">カ</text>
+</g>
+<g transform="translate(330,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.11s" begin="-3.3s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.26">マ</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.26">T</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.26">ハ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.26">ア</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.26">T</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.26">N</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.26">カ</text>
+<text x="0" y="105" font-size="12" fill="#c4f7d1" opacity="0.61">1</text>
+</g>
+<g transform="translate(348,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="3.51s" begin="-1.37s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.62">タ</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.62">Y</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.62">H</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.62">H</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.62">ナ</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.62">P</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.62">1</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.62">タ</text>
+<text x="0" y="128" font-size="13" fill="#c4f7d1" opacity="0.97">P</text>
+</g>
+<g transform="translate(366,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.37s" begin="-0.26s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.54">Y</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.54">0</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.54">1</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.54">N</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.54">L</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.54">0</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.54">H</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.54">サ</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.54">ナ</text>
+<text x="0" y="135" font-size="12" fill="#c4f7d1" opacity="0.89">ヤ</text>
+</g>
+<g transform="translate(384,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="3.77s" begin="-0.26s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.59">1</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.59">1</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.59">A</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.59">H</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.59">O</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.59">O</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.59">タ</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.59">1</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.59">O</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.59">ア</text>
+<text x="0" y="160" font-size="13" fill="#c4f7d1" opacity="0.94">タ</text>
+</g>
+<g transform="translate(402,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="5.18s" begin="-3.02s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.46">A</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.46">ハ</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.46">A</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.46">I</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.46">1</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.46">I</text>
+<text x="0" y="96" font-size="13" fill="#c4f7d1" opacity="0.81">ア</text>
+</g>
+<g transform="translate(420,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.7s" begin="-1.49s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.55">L</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.55">0</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.55">ラ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.55">ハ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.55">マ</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.55">P</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.55">サ</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.55">L</text>
+<text x="0" y="120" font-size="12" fill="#c4f7d1" opacity="0.9">M</text>
+</g>
+<g transform="translate(438,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.35s" begin="-1.15s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.62">T</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.62">I</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.62">A</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.62">カ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.62">ア</text>
+<text x="0" y="75" font-size="12" fill="#c4f7d1" opacity="0.97">N</text>
+</g>
+<g transform="translate(456,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="5.62s" begin="-3.75s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.47">ワ</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.47">ヤ</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.47">タ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.47">T</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.47">N</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.47">0</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.47">ヤ</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.47">I</text>
+<text x="0" y="136" font-size="14" fill="#c4f7d1" opacity="0.82">M</text>
+</g>
+<g transform="translate(474,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.59s" begin="-2.78s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.54">サ</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.54">マ</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.54">カ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.54">カ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.54">1</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.54">N</text>
+<text x="0" y="90" font-size="12" fill="#c4f7d1" opacity="0.89">サ</text>
+</g>
+<g transform="translate(492,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.83s" begin="-0.63s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.64">O</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.64">H</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.64">マ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.64">1</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.64">ア</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.64">M</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.64">Y</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.64">マ</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.64">1</text>
+<text x="0" y="135" font-size="12" fill="#c4f7d1" opacity="0.99">0</text>
+</g>
+<g transform="translate(510,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="5.71s" begin="-2.45s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.27">N</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.27">0</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.27">Y</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.27">N</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.27">0</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.27">カ</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.27">ア</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.27">0</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.27">サ</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.27">N</text>
+<text x="0" y="160" font-size="13" fill="#22c55e" opacity="0.27">1</text>
+<text x="0" y="176" font-size="13" fill="#22c55e" opacity="0.27">ワ</text>
+<text x="0" y="192" font-size="13" fill="#c4f7d1" opacity="0.62">A</text>
+</g>
+<g transform="translate(528,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.91s" begin="-2.75s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.6">ワ</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.6">ナ</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.6">L</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.6">ハ</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.6">L</text>
+<text x="0" y="85" font-size="14" fill="#c4f7d1" opacity="0.95">カ</text>
+</g>
+<g transform="translate(546,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.63s" begin="-2.73s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.52">ハ</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.52">タ</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.52">タ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.52">Y</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.52">0</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.52">タ</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.52">1</text>
+<text x="0" y="119" font-size="14" fill="#c4f7d1" opacity="0.87">ラ</text>
+</g>
+<g transform="translate(564,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.77s" begin="-3.12s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.37">マ</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.37">タ</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.37">0</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.37">カ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.37">P</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.37">1</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.37">H</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.37">ハ</text>
+<text x="0" y="120" font-size="12" fill="#c4f7d1" opacity="0.72">ナ</text>
+</g>
+<g transform="translate(582,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.07s" begin="-2.43s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.64">0</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.64">L</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.64">ナ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.64">P</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.64">ラ</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.64">マ</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.64">ア</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.64">マ</text>
+<text x="0" y="136" font-size="14" fill="#c4f7d1" opacity="0.99">ワ</text>
+</g>
+<g transform="translate(600,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.41s" begin="-2.01s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.49">0</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.49">カ</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.49">マ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.49">タ</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.49">A</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.49">マ</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.49">1</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.49">カ</text>
+<text x="0" y="136" font-size="14" fill="#22c55e" opacity="0.49">I</text>
+<text x="0" y="153" font-size="14" fill="#22c55e" opacity="0.49">Y</text>
+<text x="0" y="170" font-size="14" fill="#c4f7d1" opacity="0.84">ワ</text>
+</g>
+<g transform="translate(618,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="3.51s" begin="-3.25s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.47">P</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.47">A</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.47">ナ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.47">マ</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.47">1</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.47">0</text>
+<text x="0" y="102" font-size="14" fill="#c4f7d1" opacity="0.82">Y</text>
+</g>
+<g transform="translate(636,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.38s" begin="-1.92s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.37">ワ</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.37">Y</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.37">ア</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.37">L</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.37">ラ</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.37">I</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.37">ラ</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.37">L</text>
+<text x="0" y="128" font-size="13" fill="#c4f7d1" opacity="0.72">カ</text>
+</g>
+<g transform="translate(654,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="7.11s" begin="-4.38s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.37">P</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.37">0</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.37">ヤ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.37">N</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.37">サ</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.37">ナ</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.37">Y</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.37">L</text>
+<text x="0" y="136" font-size="14" fill="#22c55e" opacity="0.37">P</text>
+<text x="0" y="153" font-size="14" fill="#22c55e" opacity="0.37">L</text>
+<text x="0" y="170" font-size="14" fill="#c4f7d1" opacity="0.72">1</text>
+</g>
+<g transform="translate(672,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.12s" begin="-2.85s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.43">ヤ</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.43">ヤ</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.43">ナ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.43">Y</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.43">A</text>
+<text x="0" y="75" font-size="12" fill="#c4f7d1" opacity="0.78">I</text>
+</g>
+<g transform="translate(690,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.74s" begin="-3.82s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.31">H</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.31">1</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.31">タ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.31">L</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.31">ア</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.31">ヤ</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.31">O</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.31">L</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.31">M</text>
+<text x="0" y="135" font-size="12" fill="#22c55e" opacity="0.31">I</text>
+<text x="0" y="150" font-size="12" fill="#22c55e" opacity="0.31">ラ</text>
+<text x="0" y="165" font-size="12" fill="#22c55e" opacity="0.31">ア</text>
+<text x="0" y="180" font-size="12" fill="#22c55e" opacity="0.31">ハ</text>
+<text x="0" y="195" font-size="12" fill="#c4f7d1" opacity="0.6599999999999999">L</text>
+</g>
+<g transform="translate(708,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.29s" begin="-3.11s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.35">H</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.35">I</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.35">ア</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.35">T</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.35">Y</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.35">M</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.35">A</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.35">ナ</text>
+<text x="0" y="136" font-size="14" fill="#c4f7d1" opacity="0.7">0</text>
+</g>
+<g transform="translate(726,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="5.36s" begin="-2.99s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.62">カ</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.62">Y</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.62">ハ</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.62">タ</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.62">0</text>
+<text x="0" y="75" font-size="12" fill="#c4f7d1" opacity="0.97">O</text>
+</g>
+<g transform="translate(744,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="5.28s" begin="-0.84s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.59">サ</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.59">T</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.59">L</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.59">O</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.59">N</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.59">I</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.59">ラ</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.59">T</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.59">I</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.59">1</text>
+<text x="0" y="160" font-size="13" fill="#22c55e" opacity="0.59">O</text>
+<text x="0" y="176" font-size="13" fill="#22c55e" opacity="0.59">Y</text>
+<text x="0" y="192" font-size="13" fill="#c4f7d1" opacity="0.94">N</text>
+</g>
+<g transform="translate(762,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.35s" begin="-1.49s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="14" fill="#22c55e" opacity="0.38">ハ</text>
+<text x="0" y="17" font-size="14" fill="#22c55e" opacity="0.38">M</text>
+<text x="0" y="34" font-size="14" fill="#22c55e" opacity="0.38">マ</text>
+<text x="0" y="51" font-size="14" fill="#22c55e" opacity="0.38">O</text>
+<text x="0" y="68" font-size="14" fill="#22c55e" opacity="0.38">H</text>
+<text x="0" y="85" font-size="14" fill="#22c55e" opacity="0.38">M</text>
+<text x="0" y="102" font-size="14" fill="#22c55e" opacity="0.38">ハ</text>
+<text x="0" y="119" font-size="14" fill="#22c55e" opacity="0.38">マ</text>
+<text x="0" y="136" font-size="14" fill="#22c55e" opacity="0.38">T</text>
+<text x="0" y="153" font-size="14" fill="#c4f7d1" opacity="0.73">ア</text>
+</g>
+<g transform="translate(780,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.36s" begin="-1.81s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.38">サ</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.38">サ</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.38">ハ</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.38">P</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.38">0</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.38">サ</text>
+<text x="0" y="96" font-size="13" fill="#c4f7d1" opacity="0.73">0</text>
+</g>
+<g transform="translate(798,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.69s" begin="-1.83s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.61">1</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.61">ナ</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.61">Y</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.61">P</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.61">A</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.61">0</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.61">0</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.61">A</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.61">P</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.61">H</text>
+<text x="0" y="160" font-size="13" fill="#22c55e" opacity="0.61">0</text>
+<text x="0" y="176" font-size="13" fill="#c4f7d1" opacity="0.96">ワ</text>
+</g>
+<g transform="translate(816,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.22s" begin="-2.51s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.32">1</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.32">1</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.32">N</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.32">I</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.32">ハ</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.32">H</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.32">ハ</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.32">マ</text>
+<text x="0" y="128" font-size="13" fill="#22c55e" opacity="0.32">Y</text>
+<text x="0" y="144" font-size="13" fill="#22c55e" opacity="0.32">H</text>
+<text x="0" y="160" font-size="13" fill="#22c55e" opacity="0.32">0</text>
+<text x="0" y="176" font-size="13" fill="#22c55e" opacity="0.32">P</text>
+<text x="0" y="192" font-size="13" fill="#22c55e" opacity="0.32">ラ</text>
+<text x="0" y="208" font-size="13" fill="#c4f7d1" opacity="0.6699999999999999">L</text>
+</g>
+<g transform="translate(834,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="3.84s" begin="-1.65s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.6">I</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.6">N</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.6">0</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.6">P</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.6">A</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.6">A</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.6">L</text>
+<text x="0" y="105" font-size="12" fill="#c4f7d1" opacity="0.95">0</text>
+</g>
+<g transform="translate(852,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="4.85s" begin="-4.27s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.36">マ</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.36">P</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.36">ラ</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.36">ナ</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.36">T</text>
+<text x="0" y="80" font-size="13" fill="#c4f7d1" opacity="0.71">ラ</text>
+</g>
+<g transform="translate(870,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="6.62s" begin="-4.31s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="12" fill="#22c55e" opacity="0.55">ア</text>
+<text x="0" y="15" font-size="12" fill="#22c55e" opacity="0.55">H</text>
+<text x="0" y="30" font-size="12" fill="#22c55e" opacity="0.55">0</text>
+<text x="0" y="45" font-size="12" fill="#22c55e" opacity="0.55">1</text>
+<text x="0" y="60" font-size="12" fill="#22c55e" opacity="0.55">N</text>
+<text x="0" y="75" font-size="12" fill="#22c55e" opacity="0.55">1</text>
+<text x="0" y="90" font-size="12" fill="#22c55e" opacity="0.55">ワ</text>
+<text x="0" y="105" font-size="12" fill="#22c55e" opacity="0.55">ハ</text>
+<text x="0" y="120" font-size="12" fill="#22c55e" opacity="0.55">M</text>
+<text x="0" y="135" font-size="12" fill="#c4f7d1" opacity="0.9">ア</text>
+</g>
+<g transform="translate(888,0)">
+<animateTransform attributeName="transform" type="translate" additive="sum" values="0,-260; 0,300" dur="7.29s" begin="-3.39s" repeatCount="indefinite"/>
+<text x="0" y="0" font-size="13" fill="#22c55e" opacity="0.35">0</text>
+<text x="0" y="16" font-size="13" fill="#22c55e" opacity="0.35">I</text>
+<text x="0" y="32" font-size="13" fill="#22c55e" opacity="0.35">サ</text>
+<text x="0" y="48" font-size="13" fill="#22c55e" opacity="0.35">ハ</text>
+<text x="0" y="64" font-size="13" fill="#22c55e" opacity="0.35">サ</text>
+<text x="0" y="80" font-size="13" fill="#22c55e" opacity="0.35">H</text>
+<text x="0" y="96" font-size="13" fill="#22c55e" opacity="0.35">L</text>
+<text x="0" y="112" font-size="13" fill="#22c55e" opacity="0.35">カ</text>
+<text x="0" y="128" font-size="13" fill="#c4f7d1" opacity="0.7">A</text>
+</g>
+</g>
+<rect width="900" height="260" fill="url(#vignette)"/>
+<g text-anchor="middle" font-family="Fira Code, monospace" font-weight="700">
+<text x="450" y="108" font-size="46" fill="#ff3b6b" opacity="0.75">
+PARAS BISHNOI
+<animate attributeName="x" values="448;453;449;448" dur="2.6s" repeatCount="indefinite"/>
+</text>
+<text x="450" y="108" font-size="46" fill="#06b6d4" opacity="0.75">
+PARAS BISHNOI
+<animate attributeName="x" values="452;447;451;452" dur="2.6s" repeatCount="indefinite"/>
+</text>
+<text x="450" y="108" font-size="46" fill="#f8fafc">
+PARAS BISHNOI
+<animate attributeName="opacity" values="1;1;0.75;1;1;1;0.85;1" dur="3.4s" repeatCount="indefinite"/>
+</text>
+</g>
+<g text-anchor="middle" font-family="Fira Code, monospace">
+<text x="450" y="142" font-size="16" letter-spacing="4" fill="#a855f7">
+AI ENGINEER // ML // DATA SCIENCE
+<animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+</text>
+</g>
+<rect x="655" y="130" width="10" height="18" fill="#a855f7">
+<animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+</rect>
+</svg>
