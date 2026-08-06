@@ -1,5 +1,5 @@
 name: Generate Stats Assets
-
+ 
 on:
   schedule:
     - cron: "0 3 * * *"   # once a day, 3am UTC
