@@ -20,17 +20,34 @@ jobs:
         with:
           node-version: 20
 
+      - name: Sanity check repo layout
+        run: |
+          echo "node: $(node -v)"
+          echo "workspace: $GITHUB_WORKSPACE"
+          echo "--- repo root ---"
+          ls -la
+          echo "--- src/ ---"
+          ls -la src || echo "MISSING: src/ directory not found"
+          test -f src/generate.mjs && echo "FOUND src/generate.mjs" || echo "MISSING: src/generate.mjs not found at expected path"
+
       - name: Generate github-snake-hacker.svg
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN }}
-        run: node src/generate.mjs --login parasbishnoi029 --out dist/github-snake-hacker.svg
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::STATS_TOKEN secret is empty or not set. Add it under Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          node src/generate.mjs --login parasbishnoi029 --out dist/github-snake-hacker.svg
+          echo "--- dist/ after generate ---"
+          ls -la dist
+          test -f dist/github-snake-hacker.svg || (echo "::error::generate.mjs ran but did not produce dist/github-snake-hacker.svg" && exit 1)
 
       - name: Publish to output branch (without wiping it)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # bring the existing output branch into a temp worktree, if it exists
           git fetch origin output || true
           if git show-ref --verify --quiet refs/remotes/origin/output; then
             git worktree add /tmp/out-branch origin/output
