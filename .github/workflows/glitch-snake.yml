@@ -22,7 +22,7 @@ jobs:
 
       - name: Generate github-snake-hacker.svg
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
         run: node src/generate.mjs --login parasbishnoi029 --out dist/github-snake-hacker.svg
 
       - name: Publish to output branch (without wiping it)
