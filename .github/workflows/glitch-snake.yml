@@ -28,6 +28,9 @@ jobs:
 
       - name: Glitch-ify the SVG (CRT background + neon glow + scanlines)
         run: |
+          # Fix permission issue caused by the Docker action running as root
+          sudo chown -R $USER:$USER dist
+          
           python3 << 'PYEOF'
           import re
 
