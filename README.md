@@ -46,8 +46,7 @@ class Paras:
 
 <h2 align="center">⚡ Selected Systems</h2>
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/project-atlas.svg" width="100%"/>
+
 </div>
 
 | System | Purpose | Access |
@@ -100,7 +99,6 @@ class Paras:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/activity-dashboard.svg" width="100%"/>
 <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/github-metrics.svg" width="100%"/>
 <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/contribution-snake.svg" width="100%"/>
 
