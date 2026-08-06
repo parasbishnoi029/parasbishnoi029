@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:030712,45:6d28d9,100:06b6d4&height=230&section=header&text=PARAS%20BISHNOI&fontSize=62&fontColor=ffffff&fontAlignY=36&desc=AI%20Engineer%20%E2%80%A2%20ML%20%E2%80%A2%20Data%20Science&descAlignY=58&descSize=18&animation=twinkling" width="100%"/>
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/matrix-hero.svg" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=2600&pause=800&color=A855F7&center=true&vCenter=true&width=720&lines=Turning+raw+data+into+intelligent+systems;Building+AI+tools+people+actually+use;Python+%7C+Kotlin+%7C+Cloud+Engineering;Shipping+in+public.+Learning+in+public." alt="Typing SVG"/>
 
@@ -94,6 +94,7 @@ class Paras:
 
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/activity-dashboard.svg" width="100%"/>
 <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/github-metrics.svg" width="100%"/>
 <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/contribution-snake.svg" width="100%"/>
 
