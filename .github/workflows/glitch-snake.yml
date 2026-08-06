@@ -29,6 +29,11 @@ jobs:
           echo "--- src/ ---"
           ls -la src || echo "MISSING: src/ directory not found"
           test -f src/generate.mjs && echo "FOUND src/generate.mjs" || echo "MISSING: src/generate.mjs not found at expected path"
+          echo "--- src/generate.mjs size & line count ---"
+          wc -c src/generate.mjs 2>&1 || true
+          wc -l src/generate.mjs 2>&1 || true
+          echo "--- first 5 lines ---"
+          head -5 src/generate.mjs 2>&1 || true
 
       - name: Generate github-snake-hacker.svg
         env:
