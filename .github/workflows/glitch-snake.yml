@@ -38,10 +38,20 @@ jobs:
             echo "::error::STATS_TOKEN secret is empty or not set. Add it under Settings > Secrets and variables > Actions."
             exit 1
           fi
+          echo "pwd: $(pwd)"
+          echo "--- running generator ---"
+          set +e
           node src/generate.mjs --login parasbishnoi029 --out dist/github-snake-hacker.svg
+          NODE_EXIT=$?
+          set -e
+          echo "--- generator exited with code: $NODE_EXIT ---"
           echo "--- dist/ after generate ---"
-          ls -la dist
-          test -f dist/github-snake-hacker.svg || (echo "::error::generate.mjs ran but did not produce dist/github-snake-hacker.svg" && exit 1)
+          ls -la dist 2>&1 || echo "dist/ still missing"
+          if [ $NODE_EXIT -ne 0 ]; then
+            echo "::error::generate.mjs failed (exit $NODE_EXIT) — see its output above for the real cause"
+            exit 1
+          fi
+          test -f dist/github-snake-hacker.svg || (echo "::error::node exited 0 but did not write the file" && exit 1)
 
       - name: Publish to output branch (without wiping it)
         run: |
