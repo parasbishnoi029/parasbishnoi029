@@ -77,8 +77,6 @@ class Paras:
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-streak.svg" width="70%"/>
-
 </div>
 
 <br/>
