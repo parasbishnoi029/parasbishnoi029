@@ -1,0 +1,11 @@
+{
+  "name": "glitch-snake",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "node src/generate.mjs",
+    "demo": "node src/generate.mjs --demo --out dist/glitch-snake.svg"
+  },
+  "engines": { "node": ">=18" }
+}
