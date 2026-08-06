@@ -9,7 +9,44 @@ permissions:
   contents: write
 
 jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Render status bar
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: python .github/scripts/render_status.py
+
+      - name: Check file was created
+        run: |
+          echo "Contents of assets/:"
+          ls -la assets/ || echo "assets/ directory does not exist"
+          if [ ! -f assets/status-bar.svg ]; then
+            echo "::error::status-bar.svg was not generated. Check the 'Render status bar' step log above."
+            exit 1
+          fi
+
+      - name: Commit status bar
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/status-bar.svg
+          git diff --staged --quiet || git commit -m "chore: update last-shipped status"
+          git pull --rebase origin main
+          git push
+
   overview:
+    needs: status
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
