@@ -68,7 +68,7 @@ class Paras:
 
 <br/>
 
-<h2 align="center">📊 Live Stats — self-hosted, no third-party rate limits</h2>
+<h2 align="center">📊 Live Stats</h2>
 
 <div align="center">
 
