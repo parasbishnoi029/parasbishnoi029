@@ -99,7 +99,6 @@ class Paras:
 
 <img alt="Hacker Snake Animation" src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-snake-hacker.svg">
 
-
 <br/>
 
 <h2 align="center">🎯 Operating Principle</h2>
