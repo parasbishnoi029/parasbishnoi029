@@ -97,13 +97,11 @@ class Paras:
 
 <h2 align="center">📈 Contribution Signal</h2>
 
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/github-metrics.svg" width="100%"/>
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/contribution-snake.svg" width="100%"/>
-
-</div>
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-contribution-grid-snake.svg">
+</picture>
 > Every card above — stats, streak, languages, activity, and the snake — is rendered by this repo's own GitHub Actions and committed as a static SVG. Nothing here depends on a public demo server that can rate-limit or go dark.
 
 <br/>
