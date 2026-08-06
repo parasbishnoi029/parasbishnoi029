@@ -1,4 +1,4 @@
-name: Generate Glitch Snake
+name: Generate Hacker Snake
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -11,19 +11,68 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          node-version: '18'
+          python-version: '3.10'
 
-      - name: Decode Base64 Generator & Execute
+      - name: Create Directory and Fix Permissions
         run: |
-          # The base64 payload contains the full generation logic for the ASCII snake, 
-          # chromatic aberration filters, decay trails, and kernel panic background.
-          echo "Y29uc3QgZnMgPSByZXF1aXJlKCdmcycpOwpjb25zdCBwYXRoID0gcmVxdWlyZSgncGF0aCcpOwoKY29uc3Qgd2lkdGggPSA4MDA7CmNvbnN0IGhlaWdodCA9IDQwMDsKCmNvbnN0IHN2ZyA9IGAKPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIke3dpZHRofSIgaGVpZ2h0PSIke2hlaWdodH0iIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMwMDA7Ij4KICA8ZGVmcz4KICAgIDwhLS0gQ2hyb21hdGljIEFiZXJyYXRpb24gRmlsdGVyIC0tPgogICAgPGZpbHRlciBpZD0iZ2xpdGNoIj4KICAgICAgPGZlT2Zmc2V0IGR4PSI0IiBkeT0iMCIgaW49IlNvdXJjZUdyYXBoaWMiIHJlc3VsdD0icmVkLWdsaXRjaCIvPgogICAgICA8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMSAwIDAgMCAwICAwIDAgMCAwIDAgIDAgMCAwIDAgMCAgMCAwIDAgMSAwIiBpbj0icmVkLWdsaXRjaCIgcmVzdWx0PSJyZWQiLz4KICAgICAgPGZlT2Zmc2V0IGR4PSItNCIgZHk9IjAiIGluPSJTb3VyY2VHcmFwaGljIiByZXN1bHQ9ImJsdWUtZ2xpdGNoIi8+CiAgICAgIDxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgIDAgMCAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAxIDAiIGluPSJibHVlLWdsaXRjaCIgcmVzdWx0PSJibHVlIi8+CiAgICAgIDxmZU1lcmdlPgogICAgICAgIDxmZU1lcmdlTm9kZSBpbj0icmVkIi8+CiAgICAgICAgPGZlTWVyZ2VOb2RlIGluPSJibHVlIi8+CiAgICAgICAgPGZlTWVyZ2VOb2RlIGluPSJTb3VyY2VHcmFwaGljIi8+CiAgICAgIDwvZmVNZXJnZT4KICAgIDwvZmlsdGVyPgogICAgPCEtLSBEZWNheSBUcmFpbCBGaWx0ZXIgLS0+CiAgICA8ZmlsdGVyIGlkPSJkZWNheSI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjMiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVDb21wb25lbnRUcmFuc2Zlcj4KICAgICAgICA8ZmVGdW5jQSB0eXBlPSJsaW5lYXIiIHNsb3BlPSIwLjUiLz4KICAgICAgPC9mZUNvbXBvbmVudFRyYW5zZmVyPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgoKICA8IS0tIEtlcm5lbCBQYW5pYyBUZXh0IC0tPgogIDx0ZXh0IHg9IjEwIiB5PSIyMCIgZmlsbD0iIzBmMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiI+S2VybmVsIHBhbmljIC0gbm90IHN5bmNpbmc6IEZhdGFsIGV4Y2VwdGlvbjwvdGV4dD4KICA8dGV4dCB4PSIxMCIgeT0iMzUiIGZpbGw9IiMwZjAiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTIiPkNhbGwgVHJhY2U6IFtmZmZmZmZmZjgxNjk0YjI5XSBwYW5pYysweGJmLzB4MWU4PC90ZXh0PgoKICA8IS0tIERlY2F5IFRyYWlsIC0tPgogIDxwYXRoIGQ9Ik0gMTAwIDIwMCBRIDIwMCAxNTAgMzAwIDI1MCBUIDUwMCAyMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBmMCIgc3Ryb2tlLXdpZHRoPSI0IiBmaWx0ZXI9InVybCgjZGVjYXkpIi8+CgogIDwhLS0gQVNDSUkgU25ha2UgLS0+CiAgPHRleHQgeD0iNTAwIiB5PSIyMDUiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMjAiIGZpbHRlcj0idXJsKCNnbGl0Y2gpIj5bfl0+PT48L3RleHQ+CiAgPHRleHQgeD0iNTAwIiB5PSIyMjUiIGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMjAiIGZpbHRlcj0idXJsKCNnbGl0Y2gpIj5TWVNURU0gRkFJTFVSRTwvdGV4dD4KPC9zdmc+CmA7Cgpjb25zdCBkaXIgPSBwYXRoLmpvaW4ocHJvY2Vzcy5jd2QoKSwgJ2Rpc3QnKTsKaWYgKCFmcy5leGlzdHNTeW5jKGRpcikpewogICAgZnMubWtkaXJTeW5jKGRpciwgeyByZWN1cnNpdmU6IHRydWUgfSk7Cn0KZnMud3JpdGVGaWxlU3luYyhwYXRoLmpvaW4oZGlyLCAnc25ha2Uuc3ZnJyksIHN2Zy50cmltKCkpOwpjb25zb2xlLmxvZygiR2xpdGNoIHNuYWtlIGdlbmVyYXRlZCBzdWNjZXNzZnVsbHkgYXQgZGlzdC9zbmFrZS5zdmciKTs=" | base64 --decode > generate.mjs
-          
-          # Execute the decoded script
-          node generate.mjs
+          # Brute-force the dist directory creation and permissions
+          # to ensure the Python script isn't blocked by previous steps.
+          mkdir -p dist
+          sudo chmod -R 777 dist
+
+      - name: Generate Glitch Snake
+        run: |
+          python3 << 'PYEOF'
+          import os
+
+          # Failsafe directory check
+          os.makedirs('dist', exist_ok=True)
+
+          # Complete SVG payload with chromatic aberration, decay trails, and kernel panic text
+          svg_content = """<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" style="background-color:#000;">
+            <defs>
+              <!-- Chromatic Aberration Filter -->
+              <filter id="glitch">
+                <feOffset dx="4" dy="0" in="SourceGraphic" result="red-glitch"/>
+                <feColorMatrix type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" in="red-glitch" result="red"/>
+                <feOffset dx="-4" dy="0" in="SourceGraphic" result="blue-glitch"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" in="blue-glitch" result="blue"/>
+                <feMerge>
+                  <feMergeNode in="red"/>
+                  <feMergeNode in="blue"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+              <!-- Decay Trail Filter -->
+              <filter id="decay">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feComponentTransfer>
+                  <feFuncA type="linear" slope="0.5"/>
+                </feComponentTransfer>
+              </filter>
+            </defs>
+
+            <!-- Kernel Panic Text -->
+            <text x="10" y="20" fill="#0f0" font-family="monospace" font-size="12">Kernel panic - not syncing: Fatal exception</text>
+            <text x="10" y="35" fill="#0f0" font-family="monospace" font-size="12">Call Trace: [ffffffff81694b29] panic+0xbf/0x1e8</text>
+            
+            <!-- Decay Trail Path -->
+            <path d="M 100 200 Q 200 150 300 250 T 500 200" fill="none" stroke="#0f0" stroke-width="4" filter="url(#decay)"/>
+            
+            <!-- ASCII Snake -->
+            <text x="500" y="205" fill="#fff" font-family="monospace" font-size="20" filter="url(#glitch)">[~]=&gt;</text>
+            <text x="500" y="225" fill="#fff" font-family="monospace" font-size="20" filter="url(#glitch)">SYSTEM FAILURE</text>
+          </svg>"""
+
+          # Write output explicitly using utf-8
+          with open('dist/github-snake-hacker.svg', 'w', encoding='utf-8') as f:
+              f.write(svg_content)
+              
+          print("Successfully generated dist/github-snake-hacker.svg")
+          PYEOF
 
       - name: Push to Output Branch
         uses: peaceiris/actions-gh-pages@v3
@@ -31,4 +80,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: output
-          commit_message: "chore: update kernel panic snake graph [skip ci]"
+          commit_message: "chore: update hacker snake graph [skip ci]"
