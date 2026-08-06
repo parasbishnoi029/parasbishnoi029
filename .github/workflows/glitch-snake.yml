@@ -25,6 +25,10 @@ jobs:
 
       - name: Inject Glitch & Kernel Panic Effects
         run: |
+          # TAKE BACK OWNERSHIP OF THE DIST FOLDER FROM DOCKER
+          sudo chown -R $USER:$USER dist
+          sudo chmod -R 777 dist
+
           python3 << 'PYEOF'
           import os
 
