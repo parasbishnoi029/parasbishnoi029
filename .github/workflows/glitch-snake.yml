@@ -1,0 +1,52 @@
+name: Glitch Snake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # regenerate every 6 hours
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate github-snake-hacker.svg
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: node src/generate.mjs --login parasbishnoi029 --out dist/github-snake-hacker.svg
+
+      - name: Publish to output branch (without wiping it)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # bring the existing output branch into a temp worktree, if it exists
+          git fetch origin output || true
+          if git show-ref --verify --quiet refs/remotes/origin/output; then
+            git worktree add /tmp/out-branch origin/output
+            cd /tmp/out-branch
+            git checkout -B output
+          else
+            git worktree add --orphan -B output /tmp/out-branch
+            cd /tmp/out-branch
+          fi
+
+          cp "$GITHUB_WORKSPACE/dist/github-snake-hacker.svg" ./github-snake-hacker.svg
+          git add github-snake-hacker.svg
+
+          if git diff --cached --quiet; then
+            echo "no visual change, skipping commit"
+          else
+            git commit -m "generate: glitch snake $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git push origin HEAD:output
+          fi
