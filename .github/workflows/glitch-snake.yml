@@ -2,7 +2,7 @@ name: Glitch Snake
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # regenerate every 6 hours
+    - cron: "0 */6 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -16,47 +16,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Generate snake SVG
+        uses: Platane/snk@v3
+        id: snake
         with:
-          node-version: 20
-
-      - name: Sanity check repo layout
-        run: |
-          echo "node: $(node -v)"
-          echo "workspace: $GITHUB_WORKSPACE"
-          echo "--- repo root ---"
-          ls -la
-          echo "--- src/ ---"
-          ls -la src || echo "MISSING: src/ directory not found"
-          test -f src/generate.mjs && echo "FOUND src/generate.mjs" || echo "MISSING: src/generate.mjs not found at expected path"
-          echo "--- src/generate.mjs size & line count ---"
-          wc -c src/generate.mjs 2>&1 || true
-          wc -l src/generate.mjs 2>&1 || true
-          echo "--- first 5 lines ---"
-          head -5 src/generate.mjs 2>&1 || true
-
-      - name: Generate github-snake-hacker.svg
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake-hacker.svg?palette=github-dark&color_snake=#ff2b6d&color_dots=#0a0a0a,#123d24,#1f7a3f,#26d36a,#39ffa0
         env:
-          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
-        run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::STATS_TOKEN secret is empty or not set. Add it under Settings > Secrets and variables > Actions."
-            exit 1
-          fi
-          echo "pwd: $(pwd)"
-          echo "--- running generator ---"
-          set +e
-          node src/generate.mjs --login parasbishnoi029 --out dist/github-snake-hacker.svg
-          NODE_EXIT=$?
-          set -e
-          echo "--- generator exited with code: $NODE_EXIT ---"
-          echo "--- dist/ after generate ---"
-          ls -la dist 2>&1 || echo "dist/ still missing"
-          if [ $NODE_EXIT -ne 0 ]; then
-            echo "::error::generate.mjs failed (exit $NODE_EXIT) — see its output above for the real cause"
-            exit 1
-          fi
-          test -f dist/github-snake-hacker.svg || (echo "::error::node exited 0 but did not write the file" && exit 1)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to output branch (without wiping it)
         run: |
@@ -79,6 +47,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "no visual change, skipping commit"
           else
-            git commit -m "generate: glitch snake $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git commit -m "generate: snake $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
             git push origin HEAD:output
           fi
