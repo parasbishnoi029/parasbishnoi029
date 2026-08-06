@@ -1,29 +1,4 @@
-name: Generate Hacker Snake
-on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Generate Base Matrix Snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          # Natively configures the real contribution graph to look like a green terminal
-          # with a bright cyan snake eating the commits.
-          outputs: |
-            dist/base-snake.svg?color_snake=#00ffff&color_dots=#0d1117,#003300,#006600,#009900,#00ff00
-
-      - name: Inject Glitch & Kernel Panic Effects
+- name: Inject Glitch & Kernel Panic Effects
         run: |
           # TAKE BACK OWNERSHIP OF THE DIST FOLDER FROM DOCKER
           sudo chown -R $USER:$USER dist
@@ -39,13 +14,12 @@ jobs:
           # Force a pitch black background
           svg = svg.replace('<svg ', '<svg style="background-color:#000000;" ')
 
-          # Split the SVG to inject our hacker elements right after the opening <svg> tag
           insert_idx = svg.find('>') + 1
           svg_start = svg[:insert_idx]
           svg_body = svg[insert_idx:]
           
-          # The "Wow" payload: Chromatic filters, kernel text, and grouping
-          glitch_payload = """
+          # Step 1: Open the filter defs and group the grid
+          glitch_defs = """
             <defs>
               <filter id="glitch">
                 <feOffset dx="3" dy="0" in="SourceGraphic" result="red-glitch"/>
@@ -59,31 +33,24 @@ jobs:
                 </feMerge>
               </filter>
             </defs>
-            
-            <!-- Terminal Header Text -->
-            <text x="15" y="25" fill="#00ff00" font-family="monospace" font-size="14" filter="url(#glitch)">[~] root@github:~# ./generate_snake.sh --force</text>
-            <text x="15" y="45" fill="#00ff00" font-family="monospace" font-size="14" filter="url(#glitch)">Kernel panic - not syncing: Fatal exception in interrupt</text>
-            <text x="15" y="65" fill="#00ff00" font-family="monospace" font-size="14" filter="url(#glitch)">Call Trace: [ffffffff81694b29] panic+0xbf/0x1e8</text>
-            <text x="15" y="85" fill="#ff0000" font-family="monospace" font-size="14" filter="url(#glitch)">SYSTEM FAILURE // OVERRIDE INITIATED</text>
-            
-            <!-- Wrap the entire real contribution graph in the glitch filter -->
             <g filter="url(#glitch)">
           """
           
-          # Reassemble the SVG and close the injected <g> tag at the very end
-          final_svg = svg_start + glitch_payload + svg_body.replace('</svg>', '</g></svg>')
+          # Step 2: Render the text AFTER the grid closes so it sits on top.
+          # Added a heavy black stroke so it blocks out the grid lines beneath it.
+          glitch_text_on_top = """
+            </g>
+            <text x="15" y="25" fill="#00ff00" font-family="monospace" font-size="14" style="paint-order: stroke; stroke: #000000; stroke-width: 4px;" filter="url(#glitch)">[~] root@github:~# ./generate_snake.sh --force</text>
+            <text x="15" y="45" fill="#00ff00" font-family="monospace" font-size="14" style="paint-order: stroke; stroke: #000000; stroke-width: 4px;" filter="url(#glitch)">Kernel panic - not syncing: Fatal exception in interrupt</text>
+            <text x="15" y="65" fill="#00ff00" font-family="monospace" font-size="14" style="paint-order: stroke; stroke: #000000; stroke-width: 4px;" filter="url(#glitch)">Call Trace: [ffffffff81694b29] panic+0xbf/0x1e8</text>
+            <text x="15" y="85" fill="#ff0000" font-family="monospace" font-size="14" style="paint-order: stroke; stroke: #000000; stroke-width: 4px;" filter="url(#glitch)">SYSTEM FAILURE // OVERRIDE INITIATED</text>
+          """
+          
+          # Reassemble: Start -> Defs -> Grid (svg_body) -> Text Overlay -> End
+          final_svg = svg_start + glitch_defs + svg_body.replace('</svg>', glitch_text_on_top + '</svg>')
 
-          # Save the final injected SVG
           with open('dist/github-snake-hacker.svg', 'w', encoding='utf-8') as f:
               f.write(final_svg)
           
-          print("Masterpiece created: dist/github-snake-hacker.svg")
+          print("Masterpiece corrected and layered: dist/github-snake-hacker.svg")
           PYEOF
-
-      - name: Push to Output Branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: output
-          commit_message: "chore: unleash hacker snake [skip ci]"
