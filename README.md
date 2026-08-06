@@ -97,7 +97,7 @@ class Paras:
 
 <h2 align="center">📈 Contribution Signal</h2>
 
-<img alt="Cyberpunk Snake Animation" src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-snake-neon.svg">
+<img alt="Hacker Snake Animation" src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-snake-hacker.svg">
 
 
 <br/>
