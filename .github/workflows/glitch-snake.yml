@@ -4,6 +4,10 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+# Explicitly grant the GITHUB_TOKEN write access to push to branches
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +23,6 @@ jobs:
       - name: Create Directory and Fix Permissions
         run: |
           # Brute-force the dist directory creation and permissions
-          # to ensure the Python script isn't blocked by previous steps.
           mkdir -p dist
           sudo chmod -R 777 dist
 
@@ -75,7 +78,7 @@ jobs:
           PYEOF
 
       - name: Push to Output Branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
