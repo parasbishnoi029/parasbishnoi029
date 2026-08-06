@@ -21,6 +21,15 @@ jobs:
           filename: assets/stats-overview.svg
           base: "header, activity, community, repositories, metadata"
 
+      - name: Check file was created
+        run: |
+          echo "Contents of assets/:"
+          ls -la assets/ || echo "assets/ directory does not exist"
+          if [ ! -f assets/stats-overview.svg ]; then
+            echo "::error::stats-overview.svg was not generated. Check the 'Generate overview SVG' step log above for warnings about token scope."
+            exit 1
+          fi
+
       - name: Commit overview
         run: |
           git config user.name "github-actions[bot]"
@@ -43,6 +52,15 @@ jobs:
           plugin_languages: "yes"
           plugin_languages_analysis_timeout: "15"
           plugin_languages_limit: "8"
+
+      - name: Check file was created
+        run: |
+          echo "Contents of assets/:"
+          ls -la assets/ || echo "assets/ directory does not exist"
+          if [ ! -f assets/stats-languages.svg ]; then
+            echo "::error::stats-languages.svg was not generated. Check the 'Generate languages SVG' step log above for warnings about token scope."
+            exit 1
+          fi
 
       - name: Commit languages
         run: |
