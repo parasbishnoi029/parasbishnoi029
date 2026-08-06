@@ -1,4 +1,4 @@
-name: Generate profile summary cards
+name: Generate profile summary cards 
 
 on:
   schedule:
