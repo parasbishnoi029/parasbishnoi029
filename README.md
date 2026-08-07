@@ -51,9 +51,9 @@ class Paras:
 
 | System | Purpose | Access |
 |:---|:---|:---:|
-| 🤖 **AI Reviewer** | AI-assisted code review and developer feedback | [Repository ↗](https://github.com/parasbishnoi029/AI-Reviewer) |
-| 🛡️ **Aegis AI** | Intelligent workflows and practical automation | [Repository ↗](https://github.com/parasbishnoi029/Aegis-AI) |
-| 📄 **AI Resume Analyzer** | Direct, structured feedback from resume data | [Repository ↗](https://github.com/parasbishnoi029/AI-Resume-Analyzer) |
+| 🤖 **Neural Network Framework from Scratch** | A lightweight, modular deep learning framework built entirely in Python and NumPy | [Repository ↗]([https://github.com/parasbishnoi029/AI-Reviewer](https://github.com/parasbishnoi029/neural-net-from-scratch)) |
+| 🛡️ **Aegis AI** | Intelligent workflows and practical automation | [Repository ↗]([https://github.com/parasbishnoi029/Aegis-AI](https://github.com/parasbishnoi029/ai-reviewer)) |
+| 📄 **AI Resume Analyzer** | Direct, structured feedback from resume data | [Repository ↗]([https://github.com/parasbishnoi029/AI-Resume-Analyzer](https://github.com/parasbishnoi029/AI-Resume-Analyser)) |
 | 🌐 **Parasfolio** | My work, experiments and AI journey | [Visit ↗](https://parasfolio.qd.je/) |
 
 <br/>
