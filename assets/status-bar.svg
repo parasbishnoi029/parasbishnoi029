@@ -9,11 +9,9 @@
   <circle cx="26" cy="28" r="6" fill="#22c55e">
     <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <text x="44" y="23" font-family="Fira Code, monospace" font-size="11"
-        letter-spacing="2" fill="#a855f7">LAST SHIPPED</text>
+  <text x="44" y="23" font-family="Fira Code, monospace" font-size="11" letter-spacing="2" fill="#a855f7">LAST SHIPPED</text>
   <text x="44" y="41" font-family="Fira Code, monospace" font-size="13" fill="#f8fafc">
-    <tspan fill="#4ade80">parasfolio </tspan> — (Dreamer - doer)
+    <tspan fill="#4ade80">parasfolio</tspan> — (Dreamer - doer)
   </text>
-  <text x="700" y="32" font-family="Fira Code, monospace" font-size="11"
-        fill="#94a3b8" text-anchor="end">2h ago</text>
+  <text x="700" y="32" font-family="Fira Code, monospace" font-size="11" fill="#94a3b8" text-anchor="end">2h ago</text>
 </svg>
