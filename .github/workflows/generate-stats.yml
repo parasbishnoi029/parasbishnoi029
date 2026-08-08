@@ -1,4 +1,4 @@
-name: Generate Stats Assets
+name: Generate Stats Assets (self-hosted)
 
 on:
   schedule:
@@ -9,72 +9,50 @@ permissions:
   contents: write
 
 jobs:
-  overview:
+  streak:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate overview SVG
-        uses: lowlighter/metrics@latest
+      # Generates the streak SVG using GitHub's own API directly,
+      # inside this job. No call to streak-stats.demolab.com at all.
+      - name: Generate streak stats
+        uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          token: ${{ secrets.STATS_TOKEN }}
-          filename: assets/stats-overview.svg
-          base: "header, activity, community, repositories, metadata"
+          options: user=${{ github.repository_owner }}&theme=default&disable_animations=true
+          path: assets/stats-streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit overview
+      - name: Commit streak stats
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-overview.svg
-          git diff --staged --quiet || git commit -m "chore: update stats overview"
-          git pull --rebase origin main
-          git push
-
-  activity:
-    needs: overview
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Generate activity dashboard SVG
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.STATS_TOKEN }}
-          filename: assets/activity-dashboard.svg
-          base: ""
-          plugin_activity: "yes"
-          plugin_activity_days: "14"
-          plugin_activity_limit: "5"
-
-      - name: Commit activity dashboard
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/activity-dashboard.svg
-          git diff --staged --quiet || git commit -m "chore: update activity dashboard"
-          git pull --rebase origin main
-          git push
-
-  custom_designs:
-    needs: activity
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Inject real stats into custom templates
-        run: python .github/scripts/update_custom_svgs.py
-
-      - name: Commit customized SVGs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/stats-streak.svg
+          git diff --staged --quiet || git commit -m "chore: update streak stats"
+          git pull --rebase origin main
+          git push
+
+  languages:
+    needs: streak
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Generates the top-languages SVG the same way — computed inside
+      # this job using GITHUB_TOKEN, not fetched from a shared public host.
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6
+          path: assets/stats-languages.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit languages card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/stats-languages.svg
-          git diff --staged --quiet || git commit -m "chore: update custom animated stats"
+          git diff --staged --quiet || git commit -m "chore: update top languages card"
           git pull --rebase origin main
           git push
