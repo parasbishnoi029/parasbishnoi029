@@ -22,7 +22,7 @@ jobs:
           AUTH_HEADER=""
           if [ -n "$GH_TOKEN" ]; then AUTH_HEADER="-H Authorization:\ bearer\ $GH_TOKEN"; fi
 
-          EVENTS=$(curl -s $AUTH_HEADER "https://api.github.com/users/parasbishnoi029/events/public?per_page=30")
+          EVENTS=$(curl -s $AUTH_HEADER "https://api.github.com/users/parasbishnoi029/events?per_page=30")
           PUSH=$(echo "$EVENTS" | jq -c '[.[] | select(.type=="PushEvent")][0]')
 
           FALLBACK_MESSAGES=(
