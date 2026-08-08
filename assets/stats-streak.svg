@@ -66,14 +66,14 @@
 
     <!-- TOTAL CONTRIBUTIONS -->
     <g text-anchor='middle' filter='url(#softGlow)'>
-      <text x='82.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#numGrad)'>ERROR</text>
+      <text x='82.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#numGrad)'>0</text>
     </g>
     <text x='82.5' y='116' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='500' font-size='13' fill='#e5e7eb' letter-spacing='0.4'>Total Contributions</text>
-    <text x='82.5' y='146' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>ERROR</text>
+    <text x='82.5' y='146' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>N/A</text>
 
     <!-- CURRENT STREAK -->
     <text x='247.5' y='140' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='13' fill='#fb923c' letter-spacing='0.5'>CURRENT STREAK</text>
-    <text x='247.5' y='166' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>ERROR</text>
+    <text x='247.5' y='166' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>N/A</text>
 
     <g mask='url(#mask_out_ring_behind_fire)'>
       <circle cx='247.5' cy='73' r='42' fill='none' stroke='#3b2f14' stroke-width='6'/>
@@ -93,12 +93,12 @@
     </g>
 
     <g text-anchor='middle' filter='url(#softGlow)'>
-      <text x='247.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#streakNumGrad)'>ERROR</text>
+      <text x='247.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#streakNumGrad)'>0</text>
     </g>
 
     <!-- LONGEST STREAK -->
     <g text-anchor='middle' filter='url(#softGlow)'>
-      <text x='412.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#numGrad)'>ERROR</text>
+      <text x='412.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#numGrad)'>0</text>
     </g>
     <g transform='translate(412.5, 12)' fill='#facc15' filter='url(#softGlow)'>
       <path d='M -6,0 L 6,0 L 5.3,5.5 C 4.8,8.5 2.6,10.2 0,10.2 C -2.6,10.2 -4.8,8.5 -5.3,5.5 Z'/>
@@ -108,6 +108,6 @@
       <rect x='-4' y='13' width='8' height='2' rx='1'/>
     </g>
     <text x='412.5' y='116' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='500' font-size='13' fill='#e5e7eb' letter-spacing='0.4'>Longest Streak</text>
-    <text x='412.5' y='146' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>ERROR</text>
+    <text x='412.5' y='146' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>N/A</text>
   </g>
 </svg>
