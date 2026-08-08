@@ -1,0 +1,100 @@
+name: Daily Status Bar
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch latest public activity
+        id: activity
+        env:
+          GH_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          AUTH_HEADER=""
+          if [ -n "$GH_TOKEN" ]; then AUTH_HEADER="-H Authorization:\ bearer\ $GH_TOKEN"; fi
+
+          EVENTS=$(curl -s $AUTH_HEADER "https://api.github.com/users/parasbishnoi029/events/public?per_page=30")
+          PUSH=$(echo "$EVENTS" | jq -c '[.[] | select(.type=="PushEvent")][0]')
+
+          FALLBACK_MESSAGES=(
+            "Shipping features people forget to say thanks for"
+            "Bug fixed. New bug born."
+            "Deployed at 2am. No regrets."
+            "Coffee-driven development in progress"
+            "It works on my machine now"
+            "Refactored something nobody asked for"
+            "Turning coffee into commits"
+            "Merged. Prayed. Deployed."
+            "Small fix. Big relief."
+            "Wrote docs. Nobody will read them."
+            "Chasing an edge case across three timezones"
+            "Today's commit message was also chaotic"
+          )
+          DOY=$(date +%j)
+          IDX=$(( 10#$DOY % ${#FALLBACK_MESSAGES[@]} ))
+          FALLBACK_MSG="${FALLBACK_MESSAGES[$IDX]}"
+
+          if [ "$PUSH" != "null" ] && [ -n "$PUSH" ]; then
+            REPO=$(echo "$PUSH" | jq -r '.repo.name' | cut -d'/' -f2)
+            MSG=$(echo "$PUSH" | jq -r '.payload.commits[-1].message // empty' | head -n1)
+            CREATED=$(echo "$PUSH" | jq -r '.created_at')
+          else
+            REPO="daily-log"
+            MSG="$FALLBACK_MSG"
+            CREATED=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          fi
+
+          if [ -z "$MSG" ]; then MSG="$FALLBACK_MSG"; fi
+
+          MSG=$(echo "$MSG" | cut -c1-46)
+          if [ ${#MSG} -eq 46 ]; then MSG="${MSG}…"; fi
+
+          NOW_EPOCH=$(date -u +%s)
+          THEN_EPOCH=$(date -u -d "$CREATED" +%s)
+          DIFF=$(( NOW_EPOCH - THEN_EPOCH ))
+          if [ $DIFF -lt 3600 ]; then
+            REL="$(( DIFF / 60 ))m ago"
+          elif [ $DIFF -lt 86400 ]; then
+            REL="$(( DIFF / 3600 ))h ago"
+          else
+            REL="$(( DIFF / 86400 ))d ago"
+          fi
+
+          esc() { echo "$1" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g'; }
+          echo "repo=$(esc "$REPO")" >> "$GITHUB_OUTPUT"
+          echo "msg=$(esc "$MSG")" >> "$GITHUB_OUTPUT"
+          echo "rel=$(esc "$REL")" >> "$GITHUB_OUTPUT"
+
+      - name: Render status-bar.svg
+        env:
+          REPO: ${{ steps.activity.outputs.repo }}
+          MSG: ${{ steps.activity.outputs.msg }}
+          REL: ${{ steps.activity.outputs.rel }}
+        run: |
+          mkdir -p dist
+          echo "PHN2ZyB2aWV3Qm94PSIwIDAgNzIwIDY0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwMjA2MTciLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiMxZTFiNGIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMmUxMDY1Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJhdXJvcmExIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYTg1NWY3IiBzdG9wLW9wYWNpdHk9IjAuNTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYTg1NWY3IiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImF1cm9yYTIiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyMmQzZWUiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIyZDNlZSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJyaW0iIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyYzU1ZSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjNGFkZTgwIiBzdG9wLW9wYWNpdHk9IjAuOTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMyMmQzZWUiIHN0b3Atb3BhY2l0eT0iMC45NSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iI2E4NTVmNyIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZjQ3MmI2IiBzdG9wLW9wYWNpdHk9IjAuOTUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjJjNTVlIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0gYXR0cmlidXRlTmFtZT0iZ3JhZGllbnRUcmFuc2Zvcm0iIHR5cGU9InRyYW5zbGF0ZSIgZnJvbT0iLTcyMCAwIiB0bz0iNzIwIDAiIGR1cj0iNHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJuYW1lR3JhZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGFkZTgwIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIyZDNlZSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZmFjZVRvcCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNlYWZmZjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjODZlZmFjIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJmYWNlTGVmdCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0YWRlODAiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTY4MDNjIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJmYWNlUmlnaHQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTU4MDNkIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBhNGEyMiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNvZnRHbG93IiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSIzMDAlIiBoZWlnaHQ9IjMwMCUiPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyLjIiIHJlc3VsdD0iYiIvPgogICAgICA8ZmVNZXJnZT48ZmVNZXJnZU5vZGUgaW49ImIiLz48ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz48L2ZlTWVyZ2U+CiAgICA8L2ZpbHRlcj4KICAgIDxmaWx0ZXIgaWQ9ImNhcmRTaGFkb3ciIHg9Ii0yMCUiIHk9Ii04MCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjMwMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iNCIgc3RkRGV2aWF0aW9uPSI2IiBmbG9vZC1jb2xvcj0iIzAwMDAwMCIgZmxvb2Qtb3BhY2l0eT0iMC42Ii8+CiAgICA8L2ZpbHRlcj4KICAgIDxjbGlwUGF0aCBpZD0iY2FyZENsaXAiPgogICAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iNzIwIiBoZWlnaHQ9IjY0IiByeD0iMTIiLz4KICAgIDwvY2xpcFBhdGg+CiAgICA8Y2xpcFBhdGggaWQ9InR5cGVDbGlwIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjAiIGhlaWdodD0iMjAiPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9IndpZHRoIiB2YWx1ZXM9IjA7NDMwOzQzMDswIiBrZXlUaW1lcz0iMDswLjM1OzAuOTsxIiBkdXI9IjZzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPgogICAgICA8L3JlY3Q+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KCiAgPGcgZmlsdGVyPSJ1cmwoI2NhcmRTaGFkb3cpIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI3MjAiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0idXJsKCNiZykiLz4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNjYXJkQ2xpcCkiPgogICAgICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMCIgcj0iNDYiIGZpbGw9InVybCgjYXVyb3JhMSkiPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImN4IiB2YWx1ZXM9IjgwOzIyMDs4MCIgZHVyPSI5cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICAgICAgPC9jaXJjbGU+CiAgICAgIDxjaXJjbGUgY3g9IjU2MCIgY3k9IjU1IiByPSI1MCIgZmlsbD0idXJsKCNhdXJvcmEyKSI+CiAgICAgICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0iY3giIHZhbHVlcz0iNjIwOzQ2MDs2MjAiIGR1cj0iMTFzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPgogICAgICA8L2NpcmNsZT4KICAgICAgPGcgZmlsbD0iI2ZmZmZmZiI+CiAgICAgICAgPGNpcmNsZSBjeD0iMjYwIiBjeT0iMTIiIHI9IjAuOSIgb3BhY2l0eT0iMC42Ij48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiB2YWx1ZXM9IjAuMTswLjg7MC4xIiBkdXI9IjIuNHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iMzMwIiBjeT0iNTAiIHI9IjAuNyIgb3BhY2l0eT0iMC41Ij48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiB2YWx1ZXM9IjAuNjswLjE7MC42IiBkdXI9IjMuMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iNDEwIiBjeT0iMTQiIHI9IjAuOCIgb3BhY2l0eT0iMC41Ij48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiB2YWx1ZXM9IjAuMjswLjk7MC4yIiBkdXI9IjIuN3MiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iNjAwIiBjeT0iMTgiIHI9IjAuOSIgb3BhY2l0eT0iMC42Ij48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiB2YWx1ZXM9IjAuNzswLjE1OzAuNyIgZHVyPSIzLjZzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPjwvY2lyY2xlPgogICAgICAgIDxjaXJjbGUgY3g9IjY3MCIgY3k9IjQ2IiByPSIwLjciIG9wYWNpdHk9IjAuNSI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ib3BhY2l0eSIgdmFsdWVzPSIwLjE1OzAuNzswLjE1IiBkdXI9IjIuOXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9jaXJjbGU+CiAgICAgIDwvZz4KICAgICAgPHBvbHlsaW5lIHBvaW50cz0iMzAwLDUwIDMzMCw1MCAzNDAsMzggMzUwLDU4IDM2MCw0NCAzNzAsNTAgNDYwLDUwIDQ3MCw0MCA0ODAsNTYgNDkwLDUwIDY0MCw1MCIKICAgICAgICAgICAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzRhZGU4MCIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIKICAgICAgICAgICAgICAgIG9wYWNpdHk9IjAuNzUiIGZpbHRlcj0idXJsKCNzb2Z0R2xvdykiIHN0cm9rZS1kYXNoYXJyYXk9IjE4IDM0MCIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiPgogICAgICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9InN0cm9rZS1kYXNob2Zmc2V0IiB2YWx1ZXM9IjA7LTM1OCIgZHVyPSIzLjJzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPgogICAgICA8L3BvbHlsaW5lPgogICAgPC9nPgogICAgPHJlY3QgeD0iMC43NSIgeT0iMC43NSIgd2lkdGg9IjcxOC41IiBoZWlnaHQ9IjYyLjUiIHJ4PSIxMS41IiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjcmltKSIgc3Ryb2tlLXdpZHRoPSIxLjMiLz4KICA8L2c+CgogIDxlbGxpcHNlIGN4PSIzNCIgY3k9IjUwIiByeD0iMTUiIHJ5PSIzLjIiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjAuNSI+CiAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJyeCIgdmFsdWVzPSIxNTsxMDsxNSIgZHVyPSIyLjRzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIvPgogICAgPGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ib3BhY2l0eSIgdmFsdWVzPSIwLjU7MC4yNTswLjUiIGR1cj0iMi40cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICA8L2VsbGlwc2U+CgogIDxnIGZpbHRlcj0idXJsKCNzb2Z0R2xvdykiPgogICAgPGc+CiAgICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0idHJhbnNsYXRlIiB2YWx1ZXM9IjAsMDsgMCwtNTsgMCwwIiBkdXI9IjIuNHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+CiAgICAgIDxwYXRoIGQ9Ik0gMzQsOCBMIDQ5LDE2LjUgTCAzNCwyNSBMIDE5LDE2LjUgWiIgZmlsbD0idXJsKCNmYWNlVG9wKSIvPgogICAgICA8cGF0aCBkPSJNIDE5LDE2LjUgTCAzNCwyNSBMIDM0LDQyIEwgMTksMzMuNSBaIiBmaWxsPSJ1cmwoI2ZhY2VMZWZ0KSIvPgogICAgICA8cGF0aCBkPSJNIDQ5LDE2LjUgTCAzNCwyNSBMIDM0LDQyIEwgNDksMzMuNSBaIiBmaWxsPSJ1cmwoI2ZhY2VSaWdodCkiLz4KICAgICAgPGNpcmNsZSBjeD0iNDYiIGN5PSIxMCIgcj0iOCIgZmlsbD0iIzBmMTcyYSIgc3Ryb2tlPSIjNGFkZTgwIiBzdHJva2Utd2lkdGg9IjEuNCIvPgogICAgICA8cGF0aCBkPSJNIDQyLDEwIEwgNDUsMTMgTCA1MSw2IiBmaWxsPSJub25lIiBzdHJva2U9IiM0YWRlODAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICAgICAgICAgICBzdHJva2UtZGFzaGFycmF5PSIxMiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjEyIj4KICAgICAgICA8YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJzdHJva2UtZGFzaG9mZnNldCIgdmFsdWVzPSIxMjswOzA7MTIiIGtleVRpbWVzPSIwOzAuMzswLjg1OzEiIGR1cj0iMi40cyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiLz4KICAgICAgPC9wYXRoPgogICAgPC9nPgogIDwvZz4KCiAgPHRleHQgeD0iNjYiIHk9IjI0IiBmb250LWZhbWlseT0iRmlyYSBDb2RlLCBtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTAuNSIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNjNGI1ZmQiPkxBU1QgU0hJUFBFRDx0c3BhbiBmaWxsPSIjNGFkZTgwIj4KICAgIDxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9Im9wYWNpdHkiIHZhbHVlcz0iMTsxOzA7MDsxIiBkdXI9IjEuMnMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+4paNPC90c3Bhbj48L3RleHQ+CgogIDx0ZXh0IHg9IjY2IiB5PSI0NCIgZm9udC1mYW1pbHk9IkZpcmEgQ29kZSwgbW9ub3NwYWNlIiBmb250LXNpemU9IjE1IiBmb250LXdlaWdodD0iNjAwIj4KICAgIDx0c3BhbiBmaWxsPSJ1cmwoI25hbWVHcmFkKSI+X19SRVBPX188L3RzcGFuPgogICAgPHRzcGFuIGZpbGw9IiM5NGEzYjgiIGZvbnQtd2VpZ2h0PSI0MDAiPiDigJQgPC90c3Bhbj4KICA8L3RleHQ+CiAgPGcgY2xpcC1wYXRoPSJ1cmwoI3R5cGVDbGlwKSI+CiAgICA8dGV4dCB4PSIxODIiIHk9IjQ0IiBmb250LWZhbWlseT0iRmlyYSBDb2RlLCBtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTUiIGZpbGw9IiNmOGZhZmMiPl9fTVNHX188L3RleHQ+CiAgPC9nPgoKICA8dGV4dCB4PSI3MDAiIHk9IjM0IiBmb250LWZhbWlseT0iRmlyYSBDb2RlLCBtb25vc3BhY2UiIGZvbnQtc2l6ZT0iMTEiIGZpbGw9IiM5NGEzYjgiIHRleHQtYW5jaG9yPSJlbmQiPl9fUkVMX188L3RleHQ+Cjwvc3ZnPgo=" | base64 -d > dist/status-bar.svg
+          sed -i "s/__REPO__/${REPO}/g; s/__MSG__/${MSG}/g; s/__REL__/${REL}/g" dist/status-bar.svg
+          python3 -c "import xml.etree.ElementTree as ET; ET.parse('dist/status-bar.svg'); print('XML OK')"
+
+      - name: Commit to main
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p assets
+          cp dist/status-bar.svg assets/status-bar.svg
+          git add assets/status-bar.svg
+          if git diff --cached --quiet; then
+            echo "no change today"
+          else
+            git commit -m "chore: daily status update [skip ci]"
+            git push origin HEAD:main
+          fi
