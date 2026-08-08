@@ -34,17 +34,7 @@
 
 <br/>
 
-```python
-class Paras:
-    def __init__(self):
-        self.role      = "AI / ML / Data Science Engineer"
-        self.building  = "useful AI tools + data intelligence systems"
-        self.stack     = ["Python", "Kotlin", "FastAPI", "PyTorch", "TensorFlow"]
-        self.mission   = "turn raw data into systems people can actually use"
 
-    def philosophy(self) -> str:
-        return "Who does this help, and what becomes easier because it exists?"
-```
 
 <br/>
 
