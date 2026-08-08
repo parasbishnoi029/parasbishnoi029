@@ -84,7 +84,7 @@
         <animateTransform attributeName='transform' type='rotate' from='0 247.5 73' to='360 247.5 73' dur='8s' repeatCount='indefinite'/>
       </circle>
     </g>
-
+ 
     <g transform='translate(247.5, 21)' filter='url(#fireGlow)'>
       <g>
         <animateTransform attributeName='transform' type='scale' values='1;1.08;0.97;1.04;1' dur='1.3s' repeatCount='indefinite'/>
