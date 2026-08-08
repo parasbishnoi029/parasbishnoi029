@@ -9,20 +9,17 @@ permissions:
   contents: write
 
 jobs:
-  status:
+  overview:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Generate overview SVG
+        uses: lowlighter/metrics@latest
         with:
-          python-version: "3.11"
-
-      - name: Install dependencies
-        run: pip install requests
-
-     
+          token: ${{ secrets.STATS_TOKEN }}
+          filename: assets/stats-overview.svg
+          base: "header, activity, community, repositories, metadata"
 
       - name: Commit overview
         run: |
