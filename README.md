@@ -79,11 +79,11 @@
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-overview.svg" width="49%"/>
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-languages.svg" width="49%"/>
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-languages.svg?v=2" width="49%"/>
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-streak.svg?v=2" width="70%"/>
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-streak.svg?v=1" width="70%"/>
 
 </div>
 
