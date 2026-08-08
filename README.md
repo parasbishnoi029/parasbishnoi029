@@ -19,7 +19,7 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/status-bar.svg" width="600"/>
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/status-bar.svg?t=1" width="600"/>
 
 <br/><br/>
 
