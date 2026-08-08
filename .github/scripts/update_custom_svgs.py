@@ -7,26 +7,28 @@ USERNAME = "parasbishnoi029"
 def update_streak():
     print("--- Fetching Streak Data ---")
     try:
-        url = f"https://github-readme-streak-stats.herokuapp.com/?user={USERNAME}"
+        # UPDATED TO THE STABLE DEMOLAB SERVER!
+        url = f"https://streak-stats.demolab.com/?user={USERNAME}"
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         svg = urllib.request.urlopen(req).read().decode('utf-8')
 
-        # More aggressive regex to catch numbers anywhere in the stat fields
-        stats = re.findall(r'<text[^>]*class="stat[^>]*>([^<]+)</text>', svg)
-        dates = re.findall(r'<text[^>]*class="stagger[^>]*>([^<]+)</text>', svg)
+        # Improved regex to ignore accidental spaces
+        stats = re.findall(r'<text[^>]*class="stat[^>]*>\s*([^<]+?)\s*</text>', svg)
+        dates = re.findall(r'<text[^>]*class="stagger[^>]*>\s*([^<]+?)\s*</text>', svg)
 
-        print(f"Found Raw Stats: {stats}")
-        print(f"Found Raw Dates: {dates}")
+        print(f"DEBUG - Found Stats: {stats}")
+        print(f"DEBUG - Found Dates: {dates}")
 
         if len(stats) >= 3 and len(dates) >= 3:
-            total, current, longest = stats[0].strip(), stats[1].strip(), stats[2].strip()
-            total_d, current_d, longest_d = dates[0].strip(), dates[1].strip(), dates[2].strip()
+            total, current, longest = stats[0], stats[1], stats[2]
+            total_d, current_d, longest_d = dates[0], dates[1], dates[2]
         else:
-            raise Exception("Regex did not find enough data fields in the SVG.")
+            raise Exception("Regex did not find the expected 3 numbers in the SVG.")
+            
     except Exception as e:
-        print(f"FAILED TO FETCH STREAK: {e}")
-        total, current, longest = "0", "0", "0"
-        total_d, current_d, longest_d = "N/A", "N/A", "N/A"
+        print(f"❌ FAILED TO FETCH STREAK: {e}")
+        total, current, longest = "ERROR", "ERROR", "ERROR"
+        total_d, current_d, longest_d = "ERROR", "ERROR", "ERROR"
 
     try:
         with open('assets/streak-template.svg', 'r', encoding='utf-8') as f:
@@ -39,10 +41,12 @@ def update_streak():
         os.makedirs('assets', exist_ok=True)
         with open('assets/stats-streak.svg', 'w', encoding='utf-8') as f:
             f.write(data)
-        print("Streak SVG successfully saved!")
+        print("✅ Streak SVG successfully saved!")
     except Exception as e:
-        print(f"FAILED TO SAVE STREAK FILE: {e}")
+        print(f"❌ FAILED TO SAVE STREAK FILE: {e}")
+
+# ... (Keep your update_languages function down here as it was) ...
 
 if __name__ == "__main__":
     update_streak()
-    # (Keep your languages function here too)
+    # update_languages() # Un-comment if you are running languages too
