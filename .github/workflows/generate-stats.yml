@@ -9,78 +9,34 @@ permissions:
   contents: write
 
 jobs:
-  overview:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Generate overview SVG
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.STATS_TOKEN }}
-          filename: assets/stats-overview.svg
-          base: "header, activity, community, repositories, metadata"
-
-      - name: Commit overview
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-overview.svg
-          git diff --staged --quiet || git commit -m "chore: update stats overview"
-          git pull --rebase origin main
-          git push
-
-  activity:
-    needs: overview
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Generate activity dashboard SVG
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.STATS_TOKEN }}
-          filename: assets/activity-dashboard.svg
-          base: ""
-          plugin_activity: "yes"
-          plugin_activity_days: "14"
-          plugin_activity_limit: "5"
-
-      - name: Commit activity dashboard
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/activity-dashboard.svg
-          git diff --staged --quiet || git commit -m "chore: update activity dashboard"
-          git pull --rebase origin main
-          git push
-
   custom_designs:
-    needs: activity
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       # 1. Download stats using the official, trusted tool (saves as temp-streak.svg)
-      # This bypasses the server block!
       - name: Fetch Streak Data Safely
         uses: DenverCoder1/github-readme-streak-stats@main
         with:
           options: "user=parasbishnoi029"
           path: "assets/temp-streak.svg"
-          token: ${{ secrets.STATS_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }} # Using default token to prevent permission issues
 
-      # 2. Set up Python
+      # 2. Check if the file successfully downloaded
+      - name: Verify file download
+        run: ls -la assets/
+
+      # 3. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # 3. Run our script to transfer numbers from temp to your custom templates
+      # 4. Run our script to transfer numbers from temp to your custom template
       - name: Inject real stats into custom templates
         run: python .github/scripts/update_custom_svgs.py
 
-      # 4. Commit the final beautiful designs
+      # 5. Commit the final beautiful design
       - name: Commit customized SVGs
         run: |
           git config user.name "github-actions[bot]"
