@@ -1,42 +1,43 @@
+import urllib.request
 import re
 import os
-import urllib.request
 
 USERNAME = "parasbishnoi029"
 
 def update_streak():
-    print("--- Extracting Streak Data from Local File ---")
+    print("--- Fetching Streak Data ---")
     try:
-        # Ensure the file actually exists
-        if not os.path.exists('assets/temp-streak.svg'):
-            raise Exception("temp-streak.svg does not exist! The GitHub Action failed to download it.")
+        # Fetching directly from the stable demolab server
+        url = f"https://streak-stats.demolab.com/?user={USERNAME}"
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        svg = urllib.request.urlopen(req).read().decode('utf-8')
 
-        with open('assets/temp-streak.svg', 'r', encoding='utf-8') as f:
-            svg = f.read()
+        # Using data-testid ensures we get the right numbers even if the design code changes
+        total_m = re.search(r'data-testid="total-contributions"[^>]*>\s*([^<]+?)\s*</text>', svg)
+        current_m = re.search(r'data-testid="current-streak"[^>]*>\s*([^<]+?)\s*</text>', svg)
+        longest_m = re.search(r'data-testid="longest-streak"[^>]*>\s*([^<]+?)\s*</text>', svg)
 
-        # Bulletproof regex that finds any class containing 'stat'
-        stats = re.findall(r'<text[^>]*class="[^"]*stat[^"]*"[^>]*>\s*([^<]+?)\s*</text>', svg)
-        dates_raw = re.findall(r'<text[^>]*class="[^"]*stagger[^"]*"[^>]*>\s*([^<]+?)\s*</text>', svg)
+        total_d_m = re.search(r'data-testid="total-contributions-dates"[^>]*>\s*([^<]+?)\s*</text>', svg)
+        current_d_m = re.search(r'data-testid="current-streak-dates"[^>]*>\s*([^<]+?)\s*</text>', svg)
+        longest_d_m = re.search(r'data-testid="longest-streak-dates"[^>]*>\s*([^<]+?)\s*</text>', svg)
 
-        print(f"DEBUG Stats Found: {stats}")
+        # Assign found values or default to 0
+        total = total_m.group(1) if total_m else "0"
+        current = current_m.group(1) if current_m else "0"
+        longest = longest_m.group(1) if longest_m else "0"
 
-        if len(stats) >= 3:
-            total, current, longest = stats[0].strip(), stats[1].strip(), stats[2].strip()
-        else:
-            raise Exception("Could not find the 3 numbers in the local SVG.")
-            
-        # Safely extract the dates by looking for date-like characters
-        dates = [d for d in dates_raw if "-" in d or "Present" in d or "," in d]
-        if len(dates) >= 3:
-            total_d, current_d, longest_d = dates[0].strip(), dates[1].strip(), dates[2].strip()
-        else:
-            total_d, current_d, longest_d = "N/A", "N/A", "N/A"
+        total_d = total_d_m.group(1) if total_d_m else "N/A"
+        current_d = current_d_m.group(1) if current_d_m else "N/A"
+        longest_d = longest_d_m.group(1) if longest_d_m else "N/A"
+
+        print(f"DEBUG - Found: Total({total}), Current({current}), Longest({longest})")
 
     except Exception as e:
-        print(f"❌ FAILED TO EXTRACT STREAK: {e}")
+        print(f"❌ FAILED TO FETCH STREAK: {e}")
         total, current, longest = "ERROR", "ERROR", "ERROR"
         total_d, current_d, longest_d = "ERROR", "ERROR", "ERROR"
 
+    # Inject into custom template
     try:
         with open('assets/streak-template.svg', 'r', encoding='utf-8') as f:
             data = f.read()
@@ -52,8 +53,50 @@ def update_streak():
     except Exception as e:
         print(f"❌ FAILED TO SAVE STREAK FILE: {e}")
 
-# ... (Keep your update_languages() function exactly as it was) ...
+def update_languages():
+    print("--- Fetching Language Data ---")
+    try:
+        url = f"https://github-readme-stats.vercel.app/api/top-langs/?username={USERNAME}&langs_count=6&layout=compact"
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        svg = urllib.request.urlopen(req).read().decode('utf-8')
+
+        colors = re.findall(r'<circle[^>]*fill="([^"]+)"[^>]*/>', svg)
+        names = re.findall(r'<text data-testid="lang-name"[^>]*>([^<]+)</text>', svg)
+        percents = re.findall(r'<text data-testid="lang-progress"[^>]*>([\d.]+)%</text>', svg)
+    except Exception as e:
+        print(f"Error fetching languages: {e}")
+        return
+
+    try:
+        with open('assets/languages-template.svg', 'r', encoding='utf-8') as f:
+            data = f.read()
+
+        top_x = 0.0
+        for i in range(6):
+            if i < len(names):
+                name, color, pct_str = names[i], colors[i], percents[i]
+                pct_float = float(pct_str)
+            else:
+                name, color, pct_str, pct_float = "", "#000000", "0.0", 0.0
+
+            bar_width = 460.0 * (pct_float / 100.0)
+            anim_width = 180.0 * (pct_float / 100.0)
+
+            data = data.replace(f'{{{{LANG{i+1}_NAME}}}}', name)
+            data = data.replace(f'{{{{LANG{i+1}_COLOR}}}}', color)
+            data = data.replace(f'{{{{LANG{i+1}_PERCENT}}}}', f"{pct_str}%")
+            data = data.replace(f'{{{{LANG{i+1}_X}}}}', f"{top_x:.2f}")
+            data = data.replace(f'{{{{LANG{i+1}_BAR_WIDTH}}}}', f"{bar_width:.2f}")
+            data = data.replace(f'{{{{LANG{i+1}_ANIM_WIDTH}}}}', f"{anim_width:.2f}")
+
+            top_x += bar_width
+
+        with open('assets/stats-languages.svg', 'w', encoding='utf-8') as f:
+            f.write(data)
+        print("✅ Languages SVG updated!")
+    except Exception as e:
+        print(f"❌ FAILED TO SAVE LANGUAGES: {e}")
 
 if __name__ == "__main__":
     update_streak()
-    # update_languages()
+    update_languages()
