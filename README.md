@@ -97,8 +97,14 @@ class Paras:
 
 <h2 align="center">📈 Contribution Signal</h2>
 
-<img alt="Hacker Snake Animation" src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/github-snake-hacker.svg">
 
+
+<!-- galaga -->
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/galaga-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/galaga-contribution-graph.svg">
+    <img alt="galaga contribution graph" src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/output/galaga-contribution-graph.svg">
+</picture>
 <br/>
 
 <h2 align="center">🎯 Operating Principle</h2>
