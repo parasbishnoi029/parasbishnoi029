@@ -39,7 +39,7 @@ jobs:
             "Chasing an edge case across three timezones"
             "Today's commit message was also chaotic"
           )
-          DOY=$(date +%j)
+          DOY=$(( $(date +%s) / 300 ))
           IDX=$(( 10#$DOY % ${#FALLBACK_MESSAGES[@]} ))
           FALLBACK_MSG="${FALLBACK_MESSAGES[$IDX]}"
 
