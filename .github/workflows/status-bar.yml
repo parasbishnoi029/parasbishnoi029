@@ -91,7 +91,13 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p assets
           cp dist/status-bar.svg assets/status-bar.svg
-          git add assets/status-bar.svg
+
+          # bust the README's cached copy by rewriting the query string every run
+          if [ -f README.md ]; then
+            sed -E -i "s#(assets/status-bar\.svg)(\?[^\"'>]*)?#\1?v=$(date +%s)#g" README.md
+          fi
+
+          git add assets/status-bar.svg README.md
           if git diff --cached --quiet; then
             echo "no change today"
           else
