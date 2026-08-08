@@ -83,7 +83,7 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-streak.svg" width="70%"/>
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/stats-streak.svg?v=2" width="70%"/>
 
 </div>
 
