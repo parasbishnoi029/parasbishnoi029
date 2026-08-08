@@ -61,14 +61,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # 1. Download stats using the official, trusted tool (saves as temp-streak.svg)
+      # This bypasses the server block!
+      - name: Fetch Streak Data Safely
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: "user=parasbishnoi029"
+          path: "assets/temp-streak.svg"
+          token: ${{ secrets.STATS_TOKEN }}
+
+      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
+      # 3. Run our script to transfer numbers from temp to your custom templates
       - name: Inject real stats into custom templates
         run: python .github/scripts/update_custom_svgs.py
 
+      # 4. Commit the final beautiful designs
       - name: Commit customized SVGs
         run: |
           git config user.name "github-actions[bot]"
