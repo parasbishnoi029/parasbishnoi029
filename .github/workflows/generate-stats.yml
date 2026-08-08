@@ -73,8 +73,14 @@ jobs:
       #     instead of overwriting them with zeros/blanks
       #   - fails the job loudly (red X) when a fetch can't be completed,
       #     so you know your animated streak/language cards are stale
-      - name: Inject real stats into custom animated templates
-        run: python .github/scripts/update_custom_svgs.py
+      # Fully native: talks straight to api.github.com/graphql using the
+      # token below. No streak-stats.demolab.com, no
+      # github-readme-stats.vercel.app, no self-hosted deployment needed.
+      - name: Compute stats natively and inject into custom animated templates
+        env:
+          GH_USERNAME: parasbishnoi029
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/generate_stats_native.py
 
       - name: Commit customized SVGs
         run: |
