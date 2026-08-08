@@ -1,107 +1,19 @@
-<svg viewBox="0 0 720 64" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 720 56" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020617"/>
-      <stop offset="55%" stop-color="#1e1b4b"/>
-      <stop offset="100%" stop-color="#2e1065"/>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
     </linearGradient>
-    <radialGradient id="aurora1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="aurora2" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="rim" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22c55e" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#4ade80" stop-opacity="0.95"/>
-      <stop offset="40%" stop-color="#22d3ee" stop-opacity="0.95"/>
-      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.95"/>
-      <stop offset="80%" stop-color="#f472b6" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
-      <animateTransform attributeName="gradientTransform" type="translate" from="-720 0" to="720 0" dur="4s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#4ade80"/>
-      <stop offset="100%" stop-color="#22d3ee"/>
-    </linearGradient>
-    <linearGradient id="faceTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#eafff2"/>
-      <stop offset="100%" stop-color="#86efac"/>
-    </linearGradient>
-    <linearGradient id="faceLeft" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4ade80"/>
-      <stop offset="100%" stop-color="#16803c"/>
-    </linearGradient>
-    <linearGradient id="faceRight" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#15803d"/>
-      <stop offset="100%" stop-color="#0a4a22"/>
-    </linearGradient>
-    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="2.2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="cardShadow" x="-20%" y="-80%" width="140%" height="300%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
-    </filter>
-    <clipPath id="cardClip">
-      <rect x="0" y="0" width="720" height="64" rx="12"/>
-    </clipPath>
   </defs>
-
-  <g filter="url(#cardShadow)">
-    <rect x="0" y="0" width="720" height="64" rx="12" fill="url(#bg)"/>
-    <g clip-path="url(#cardClip)">
-      <circle cx="120" cy="10" r="46" fill="url(#aurora1)">
-        <animate attributeName="cx" values="80;220;80" dur="9s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="560" cy="55" r="50" fill="url(#aurora2)">
-        <animate attributeName="cx" values="620;460;620" dur="11s" repeatCount="indefinite"/>
-      </circle>
-      <g fill="#ffffff">
-        <circle cx="260" cy="12" r="0.9" opacity="0.6"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.4s" repeatCount="indefinite"/></circle>
-        <circle cx="330" cy="50" r="0.7" opacity="0.5"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.1s" repeatCount="indefinite"/></circle>
-        <circle cx="410" cy="14" r="0.8" opacity="0.5"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
-        <circle cx="600" cy="18" r="0.9" opacity="0.6"><animate attributeName="opacity" values="0.7;0.15;0.7" dur="3.6s" repeatCount="indefinite"/></circle>
-        <circle cx="670" cy="46" r="0.7" opacity="0.5"><animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.9s" repeatCount="indefinite"/></circle>
-      </g>
-      <polyline points="300,50 330,50 340,38 350,58 360,44 370,50 460,50 470,40 480,56 490,50 640,50"
-                fill="none" stroke="#4ade80" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"
-                opacity="0.75" filter="url(#softGlow)" stroke-dasharray="18 340" stroke-dashoffset="0">
-        <animate attributeName="stroke-dashoffset" values="0;-358" dur="3.2s" repeatCount="indefinite"/>
-      </polyline>
-    </g>
-    <rect x="0.75" y="0.75" width="718.5" height="62.5" rx="11.5" fill="none" stroke="url(#rim)" stroke-width="1.3"/>
-  </g>
-
-  <ellipse cx="34" cy="50" rx="15" ry="3.2" fill="#000000" opacity="0.5">
-    <animate attributeName="rx" values="15;10;15" dur="2.4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.5;0.25;0.5" dur="2.4s" repeatCount="indefinite"/>
-  </ellipse>
-
-  <g filter="url(#softGlow)">
-    <g>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="2.4s" repeatCount="indefinite"/>
-      <path d="M 34,8 L 49,16.5 L 34,25 L 19,16.5 Z" fill="url(#faceTop)"/>
-      <path d="M 19,16.5 L 34,25 L 34,42 L 19,33.5 Z" fill="url(#faceLeft)"/>
-      <path d="M 49,16.5 L 34,25 L 34,42 L 49,33.5 Z" fill="url(#faceRight)"/>
-      <circle cx="46" cy="10" r="8" fill="#0f172a" stroke="#4ade80" stroke-width="1.4"/>
-      <path d="M 42,10 L 45,13 L 51,6" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            stroke-dasharray="12" stroke-dashoffset="12">
-        <animate attributeName="stroke-dashoffset" values="12;0;0;12" keyTimes="0;0.3;0.85;1" dur="2.4s" repeatCount="indefinite"/>
-      </path>
-    </g>
-  </g>
-
-  <text x="66" y="24" font-family="Fira Code, monospace" font-size="10.5" letter-spacing="2" fill="#c4b5fd">LAST SHIPPED<tspan fill="#4ade80">
-    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>▍</tspan></text>
-
-  <text x="66" y="44" font-family="Fira Code, monospace" font-size="15" font-weight="600">
-    <tspan fill="url(#nameGrad)">parasbishnoi029</tspan>
-    <tspan fill="#94a3b8" font-weight="400"> — </tspan>
-    <tspan fill="#f8fafc" font-weight="400">Wrote docs. Nobody will read them.</tspan>
+  <rect width="720" height="56" rx="10" fill="url(#bar)"/>
+  <circle cx="26" cy="28" r="6" fill="#22c55e">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="44" y="23" font-family="Fira Code, monospace" font-size="11"
+        letter-spacing="2" fill="#a855f7">LAST SHIPPED</text>
+  <text x="44" y="41" font-family="Fira Code, monospace" font-size="13" fill="#f8fafc">
+    <tspan fill="#4ade80">parasbishnoi029</tspan> — (no message)
   </text>
-
-  <text x="700" y="34" font-family="Fira Code, monospace" font-size="11" fill="#94a3b8" text-anchor="end">0m ago</text>
+  <text x="700" y="32" font-family="Fira Code, monospace" font-size="11"
+        fill="#94a3b8" text-anchor="end">just now</text>
 </svg>
