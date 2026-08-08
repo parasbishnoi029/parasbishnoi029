@@ -1,48 +1,43 @@
-name: Generate Stats Assets
+name: Glitch Snake
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # once a day, 3am UTC
-  workflow_dispatch:        # manual "Run workflow" button
+    - cron: "0 0 * * *" # Runs once a day at midnight UTC
+  workflow_dispatch:    # Allows manual running from the Actions tab
 
 permissions:
   contents: write
 
 jobs:
-  custom_designs:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # 1. Download stats using the official, trusted tool (saves as temp-streak.svg)
-      - name: Fetch Streak Data Safely
-        uses: DenverCoder1/github-readme-streak-stats@main
+      - name: Generate Glitch Snake
+        uses: Platane/snk@v3
         with:
-          options: "user=parasbishnoi029"
-          path: "assets/temp-streak.svg"
-          token: ${{ secrets.STATS_TOKEN }} # Using default token to prevent permission issues
+          github_user_name: parasbishnoi029
+          outputs: |
+            github-snake-hacker.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. Check if the file successfully downloaded
-      - name: Verify file download
-        run: ls -la assets/
-
-      # 3. Set up Python
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      # 4. Run our script to transfer numbers from temp to your custom template
-      - name: Inject real stats into custom templates
-        run: python .github/scripts/update_custom_svgs.py
-
-      # 5. Commit the final beautiful design
-      - name: Commit customized SVGs
+      - name: Commit and push to output branch
         run: |
+          # Set up bot identity
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/stats-streak.svg
-          git add assets/stats-languages.svg
-          git diff --staged --quiet || git commit -m "chore: update custom animated stats"
-          git pull --rebase origin main
-          git push
+          
+          # Create and switch to the output branch
+          git checkout -B output
+          
+          # Add the newly generated snake file
+          git add github-snake-hacker.svg
+          
+          # Commit the file (or exit gracefully if no changes were made)
+          git commit -m "generate: glitch snake" || exit 0
+          
+          # Force push to the output branch to bypass any Git lock/collision errors
+          git push -f origin output
