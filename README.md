@@ -6,7 +6,7 @@
 
 <img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/terminal-flex.gif" width="600"/>
 
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/flex-badge.svg" width="260"/>
+
 
 <br/>
 
