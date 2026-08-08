@@ -7,19 +7,19 @@ USERNAME = "parasbishnoi029"
 def update_streak():
     print("--- Fetching Streak Data ---")
     try:
-        # Fetching directly from the stable demolab server
-        url = f"https://streak-stats.demolab.com/?user={USERNAME}"
+        # Added &disable_animations=true to remove the nested tags that were breaking our search!
+        url = f"https://streak-stats.demolab.com/?user={USERNAME}&disable_animations=true"
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         svg = urllib.request.urlopen(req).read().decode('utf-8')
 
-        # Using data-testid ensures we get the right numbers even if the design code changes
-        total_m = re.search(r'data-testid="total-contributions"[^>]*>\s*([^<]+?)\s*</text>', svg)
-        current_m = re.search(r'data-testid="current-streak"[^>]*>\s*([^<]+?)\s*</text>', svg)
-        longest_m = re.search(r'data-testid="longest-streak"[^>]*>\s*([^<]+?)\s*</text>', svg)
+        # Bulletproof regex: captures anything immediately after the > and before the next <
+        total_m = re.search(r'data-testid="total-contributions"[^>]*>\s*([^<]+?)\s*<', svg)
+        current_m = re.search(r'data-testid="current-streak"[^>]*>\s*([^<]+?)\s*<', svg)
+        longest_m = re.search(r'data-testid="longest-streak"[^>]*>\s*([^<]+?)\s*<', svg)
 
-        total_d_m = re.search(r'data-testid="total-contributions-dates"[^>]*>\s*([^<]+?)\s*</text>', svg)
-        current_d_m = re.search(r'data-testid="current-streak-dates"[^>]*>\s*([^<]+?)\s*</text>', svg)
-        longest_d_m = re.search(r'data-testid="longest-streak-dates"[^>]*>\s*([^<]+?)\s*</text>', svg)
+        total_d_m = re.search(r'data-testid="total-contributions-dates"[^>]*>\s*([^<]+?)\s*<', svg)
+        current_d_m = re.search(r'data-testid="current-streak-dates"[^>]*>\s*([^<]+?)\s*<', svg)
+        longest_d_m = re.search(r'data-testid="longest-streak-dates"[^>]*>\s*([^<]+?)\s*<', svg)
 
         # Assign found values or default to 0
         total = total_m.group(1) if total_m else "0"
