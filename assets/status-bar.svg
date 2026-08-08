@@ -103,7 +103,7 @@
     <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>▍</tspan></text>
 
   <text x="66" y="44" font-family="Fira Code, monospace" font-size="15" font-weight="600">
-    <tspan fill="url(#nameGrad)">parasbishnoi029</tspan>
+    <tspan fill="url(#nameGrad)">Paras Bishnoi</tspan>
     <tspan fill="#94a3b8" font-weight="400"> — </tspan>
   </text>
   <g clip-path="url(#typeClip)">
