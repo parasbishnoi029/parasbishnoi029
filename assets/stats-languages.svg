@@ -54,12 +54,12 @@
     <g transform="translate(17,66)">
       <rect x="0" y="0" width="460" height="10" rx="5" fill="#1f2937"/>
       <g clip-path="url(#barGrow)">
-        <rect x="0.00" y="0" width="360.45" height="10" fill="#3178c6"/>
-        <rect x="360.45" y="0" width="28.33" height="10" fill="#f1e05a"/>
-        <rect x="388.79" y="0" width="20.51" height="10" fill="#e34c26"/>
-        <rect x="409.29" y="0" width="18.42" height="10" fill="#A97BFF"/>
+        <rect x="0.00" y="0" width="360.48" height="10" fill="#3178c6"/>
+        <rect x="360.48" y="0" width="28.33" height="10" fill="#f1e05a"/>
+        <rect x="388.80" y="0" width="20.50" height="10" fill="#e34c26"/>
+        <rect x="409.30" y="0" width="18.42" height="10" fill="#A97BFF"/>
         <rect x="427.72" y="0" width="16.04" height="10" fill="#3572A5"/>
-        <rect x="443.76" y="0" width="11.83" height="10" fill="#336790"/>
+        <rect x="443.76" y="0" width="11.82" height="10" fill="#336790"/>
         <rect x="0" y="0" width="460" height="10" fill="url(#barSheen)"/>
       </g>
       <rect x="0" y="0" width="460" height="10" rx="5" fill="none" stroke="#000" stroke-opacity="0.25"/>
@@ -72,7 +72,7 @@
         <circle cx="6" cy="-4" r="5" fill="#3178c6" filter="url(#softGlow)"/>
         <text x="20" y="0">TypeScript</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#3178c6"><animate attributeName="width" values="0;141.05" dur="1.4s" begin="0.3s" fill="freeze"/></rect>
+        <rect x="220" y="-11" height="6" rx="3" fill="#3178c6"><animate attributeName="width" values="0;141.06" dur="1.4s" begin="0.3s" fill="freeze"/></rect>
         <text x="450" y="0" text-anchor="end" fill="#9ca3af">78.4%</text>
       </g>
       <!-- LANG 2 -->
@@ -80,7 +80,7 @@
         <circle cx="6" cy="-4" r="5" fill="#f1e05a" filter="url(#softGlow)"/>
         <text x="20" y="0">JavaScript</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#f1e05a"><animate attributeName="width" values="0;11.09" dur="1.4s" begin="0.45s" fill="freeze"/></rect>
+        <rect x="220" y="-11" height="6" rx="3" fill="#f1e05a"><animate attributeName="width" values="0;11.08" dur="1.4s" begin="0.45s" fill="freeze"/></rect>
         <text x="450" y="0" text-anchor="end" fill="#9ca3af">6.2%</text>
       </g>
       <!-- LANG 3 -->
