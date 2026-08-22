@@ -54,12 +54,12 @@
     <g transform="translate(17,66)">
       <rect x="0" y="0" width="460" height="10" rx="5" fill="#1f2937"/>
       <g clip-path="url(#barGrow)">
-        <rect x="0.00" y="0" width="386.70" height="10" fill="#3178c6"/>
-        <rect x="386.70" y="0" width="20.38" height="10" fill="#e34c26"/>
-        <rect x="407.07" y="0" width="18.31" height="10" fill="#A97BFF"/>
-        <rect x="425.38" y="0" width="11.75" height="10" fill="#336790"/>
-        <rect x="437.14" y="0" width="11.72" height="10" fill="#3572A5"/>
-        <rect x="448.85" y="0" width="7.75" height="10" fill="#f1e05a"/>
+        <rect x="0.00" y="0" width="391.89" height="10" fill="#3178c6"/>
+        <rect x="391.89" y="0" width="18.91" height="10" fill="#e34c26"/>
+        <rect x="410.80" y="0" width="16.99" height="10" fill="#A97BFF"/>
+        <rect x="427.79" y="0" width="10.91" height="10" fill="#336790"/>
+        <rect x="438.70" y="0" width="10.87" height="10" fill="#3572A5"/>
+        <rect x="449.57" y="0" width="7.19" height="10" fill="#f1e05a"/>
         <rect x="0" y="0" width="460" height="10" fill="url(#barSheen)"/>
       </g>
       <rect x="0" y="0" width="460" height="10" rx="5" fill="none" stroke="#000" stroke-opacity="0.25"/>
@@ -72,48 +72,48 @@
         <circle cx="6" cy="-4" r="5" fill="#3178c6" filter="url(#softGlow)"/>
         <text x="20" y="0">TypeScript</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#3178c6"><animate attributeName="width" values="0;151.32" dur="1.4s" begin="0.3s" fill="freeze"/></rect>
-        <text x="450" y="0" text-anchor="end" fill="#9ca3af">84.1%</text>
+        <rect x="220" y="-11" height="6" rx="3" fill="#3178c6"><animate attributeName="width" values="0;153.35" dur="1.4s" begin="0.3s" fill="freeze"/></rect>
+        <text x="450" y="0" text-anchor="end" fill="#9ca3af">85.2%</text>
       </g>
       <!-- LANG 2 -->
       <g transform="translate(24,138)">
         <circle cx="6" cy="-4" r="5" fill="#e34c26" filter="url(#softGlow)"/>
         <text x="20" y="0">HTML</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#e34c26"><animate attributeName="width" values="0;7.97" dur="1.4s" begin="0.45s" fill="freeze"/></rect>
-        <text x="450" y="0" text-anchor="end" fill="#9ca3af">4.4%</text>
+        <rect x="220" y="-11" height="6" rx="3" fill="#e34c26"><animate attributeName="width" values="0;7.40" dur="1.4s" begin="0.45s" fill="freeze"/></rect>
+        <text x="450" y="0" text-anchor="end" fill="#9ca3af">4.1%</text>
       </g>
       <!-- LANG 3 -->
       <g transform="translate(24,168)">
         <circle cx="6" cy="-4" r="5" fill="#A97BFF" filter="url(#softGlow)"/>
         <text x="20" y="0">Kotlin</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#A97BFF"><animate attributeName="width" values="0;7.16" dur="1.4s" begin="0.6s" fill="freeze"/></rect>
-        <text x="450" y="0" text-anchor="end" fill="#9ca3af">4.0%</text>
+        <rect x="220" y="-11" height="6" rx="3" fill="#A97BFF"><animate attributeName="width" values="0;6.65" dur="1.4s" begin="0.6s" fill="freeze"/></rect>
+        <text x="450" y="0" text-anchor="end" fill="#9ca3af">3.7%</text>
       </g>
       <!-- LANG 4 -->
       <g transform="translate(24,198)">
         <circle cx="6" cy="-4" r="5" fill="#336790" filter="url(#softGlow)"/>
         <text x="20" y="0">PLpgSQL</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#336790"><animate attributeName="width" values="0;4.60" dur="1.4s" begin="0.75s" fill="freeze"/></rect>
-        <text x="450" y="0" text-anchor="end" fill="#9ca3af">2.6%</text>
+        <rect x="220" y="-11" height="6" rx="3" fill="#336790"><animate attributeName="width" values="0;4.27" dur="1.4s" begin="0.75s" fill="freeze"/></rect>
+        <text x="450" y="0" text-anchor="end" fill="#9ca3af">2.4%</text>
       </g>
       <!-- LANG 5 -->
       <g transform="translate(24,228)">
         <circle cx="6" cy="-4" r="5" fill="#3572A5" filter="url(#softGlow)"/>
         <text x="20" y="0">Python</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#3572A5"><animate attributeName="width" values="0;4.58" dur="1.4s" begin="0.9s" fill="freeze"/></rect>
-        <text x="450" y="0" text-anchor="end" fill="#9ca3af">2.5%</text>
+        <rect x="220" y="-11" height="6" rx="3" fill="#3572A5"><animate attributeName="width" values="0;4.25" dur="1.4s" begin="0.9s" fill="freeze"/></rect>
+        <text x="450" y="0" text-anchor="end" fill="#9ca3af">2.4%</text>
       </g>
       <!-- LANG 6 -->
       <g transform="translate(24,258)">
         <circle cx="6" cy="-4" r="5" fill="#f1e05a" filter="url(#softGlow)"/>
         <text x="20" y="0">JavaScript</text>
         <rect x="220" y="-11" width="180" height="6" rx="3" fill="#1f2937"/>
-        <rect x="220" y="-11" height="6" rx="3" fill="#f1e05a"><animate attributeName="width" values="0;3.03" dur="1.4s" begin="1.05s" fill="freeze"/></rect>
-        <text x="450" y="0" text-anchor="end" fill="#9ca3af">1.7%</text>
+        <rect x="220" y="-11" height="6" rx="3" fill="#f1e05a"><animate attributeName="width" values="0;2.81" dur="1.4s" begin="1.05s" fill="freeze"/></rect>
+        <text x="450" y="0" text-anchor="end" fill="#9ca3af">1.6%</text>
       </g>
     </g>
   </g>
