@@ -98,9 +98,9 @@
     <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>▍</tspan></text>
 
   <text x="66" y="44" font-family="Fira Code, monospace" font-size="15" font-weight="600">
-    <tspan fill="url(#nameGrad)">Vivexa</tspan>
+    <tspan fill="url(#nameGrad)">parasbishnoi029</tspan>
     <tspan fill="#94a3b8" font-weight="400"> — </tspan>
-    <tspan fill="#f8fafc" font-weight="400">Today's commit message was also chaoti…</tspan>
+    <tspan fill="#f8fafc" font-weight="400">Merged. Prayed. Deployed.</tspan>
   </text>
 
   <text x="700" y="34" font-family="Fira Code, monospace" font-size="11" fill="#94a3b8" text-anchor="end">6h ago</text>
