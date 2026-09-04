@@ -66,14 +66,14 @@
 
     <!-- TOTAL CONTRIBUTIONS -->
     <g text-anchor='middle' filter='url(#softGlow)'>
-      <text x='82.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#numGrad)'>908</text>
+      <text x='82.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#numGrad)'>913</text>
     </g>
     <text x='82.5' y='116' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='500' font-size='13' fill='#e5e7eb' letter-spacing='0.4'>Total Contributions</text>
-    <text x='82.5' y='146' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>Jan 1, 2025 - Sep 3, 2026</text>
+    <text x='82.5' y='146' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>Jan 1, 2025 - Sep 4, 2026</text>
 
     <!-- CURRENT STREAK -->
     <text x='247.5' y='140' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='700' font-size='13' fill='#fb923c' letter-spacing='0.5'>CURRENT STREAK</text>
-    <text x='247.5' y='166' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>N/A</text>
+    <text x='247.5' y='166' text-anchor='middle' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='400' font-size='11' fill='#9ca3af'>Sep 4, 2026 - Sep 4, 2026</text>
 
     <g mask='url(#mask_out_ring_behind_fire)'>
       <circle cx='247.5' cy='73' r='42' fill='none' stroke='#3b2f14' stroke-width='6'/>
@@ -93,7 +93,7 @@
     </g>
 
     <g text-anchor='middle' filter='url(#softGlow)'>
-      <text x='247.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#streakNumGrad)'>0</text>
+      <text x='247.5' y='80' font-family='"Segoe UI", Ubuntu, sans-serif' font-weight='800' font-size='30' fill='url(#streakNumGrad)'>1</text>
     </g>
 
     <!-- LONGEST STREAK -->
