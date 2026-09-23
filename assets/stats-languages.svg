@@ -56,7 +56,7 @@
       <g clip-path="url(#barGrow)">
         <rect x="0.00" y="0" width="390.62" height="10" fill="#3178c6"/>
         <rect x="390.62" y="0" width="19.65" height="10" fill="#3572A5"/>
-        <rect x="410.27" y="0" width="16.33" height="10" fill="#e34c26"/>
+        <rect x="410.26" y="0" width="16.33" height="10" fill="#e34c26"/>
         <rect x="426.59" y="0" width="14.60" height="10" fill="#A97BFF"/>
         <rect x="441.19" y="0" width="9.37" height="10" fill="#336790"/>
         <rect x="450.56" y="0" width="6.18" height="10" fill="#f1e05a"/>
