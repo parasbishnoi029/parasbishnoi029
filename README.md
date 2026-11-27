@@ -23,7 +23,7 @@
 
 <br/><br/>
 
-<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/status-bar.svg?v=1795708483" width="600"/>
+<img src="https://raw.githubusercontent.com/parasbishnoi029/parasbishnoi029/main/assets/status-bar.svg?v=1795794202" width="600"/>
 
 <br/><br/>
 
